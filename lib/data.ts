@@ -16,20 +16,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Services",
-    hash: "#Services",
+    name: "Events",
+    hash: "#events",
   },
   {
     name: "Reviews",
     hash: "#reviews",
   },
-  // {
-  //   name: "Features",
-  //   hash: "#features",
-  // },
   {
-    name: "Qualifications",
-    hash: "#qualifications",
+    name: "Board",
+    hash: "#board",
   },
   {
     name: "Contact",
@@ -72,51 +68,51 @@ export const qualificationsData = [
   },
 ] as const;
 
-export const servicesData = [
-  {
-    title: "Personal Lessons",
-    description:
-      "1-on-1 tutoring sessions customizable to the students needs, English and Spanish lessons for all levels and ages.",
-    imageUrl: hotAramis,
-  },
-  {
-    title: "Open English",
-    description:
-      "English Language Teacher for Latin American students at one of the largest online English learning platforms in the American continent.",
-    imageUrl: openEnglish,
-  },
-  {
-    title: "LanguaTalk",
-    description:
-      "1-on-1 sessions with learners from a wide variety of countries, creating study plans and adapting materials according to their learning objectives and linguistic competence.",
-    imageUrl: languaTalk,
-  },
-] as const;
+// export const servicesData = [
+//   {
+//     title: "Personal Lessons",
+//     description:
+//       "1-on-1 tutoring sessions customizable to the students needs, English and Spanish lessons for all levels and ages.",
+//     imageUrl: hotAramis,
+//   },
+//   {
+//     title: "Open English",
+//     description:
+//       "English Language Teacher for Latin American students at one of the largest online English learning platforms in the American continent.",
+//     imageUrl: openEnglish,
+//   },
+//   {
+//     title: "LanguaTalk",
+//     description:
+//       "1-on-1 sessions with learners from a wide variety of countries, creating study plans and adapting materials according to their learning objectives and linguistic competence.",
+//     imageUrl: languaTalk,
+//   },
+// ] as const;
 
 export const reviewsData = [
   {
     name: "Lindsey",
-    country: "USA",
+    country: "Finland",
     description:
-      "Aramis is fantastic. He mixes up learning styles and has made each class interesting. I’m looking forward to all of my future classes!",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
   },
   {
     name: "Lyn",
-    country: "USA",
+    country: "Finland",
     description:
-      "Aramis is a great tutor. He is clear and concise and patient. His lesson plans are well thought out and our time is very well spent. He offers thoughtful corrections and suggestions that help my Spanish.",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
   },
   {
     name: "Jordan",
-    country: "USA",
+    country: "Finland",
     description:
-      "Knowledgeable, patient, and kind. Personalized lessons make the content equally engaging and useful. I highly recommend Aramis. ",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
   },
   {
     name: "Starr",
-    country: "USA",
+    country: "Finland",
     description:
-      "Aramis is well prepared not only with what I need, but also with what I MIGHT need. I appreciate his patience and positive feedback!",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
   },
 ] as const;
 

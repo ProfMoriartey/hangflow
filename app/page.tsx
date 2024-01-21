@@ -5,6 +5,7 @@ import Intro from "@/components/intro";
 import Services from "@/components/services";
 import SectionDivider from "@/components/section-divider";
 import Reviews from "@/components/reviews";
+import CheckEvents from "@/components/check-events";
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
-      <Services />
+      <CheckEvents />
       <Reviews />
-      <Qualifications />
+      {/* <Qualifications /> */}
       <Contact />
     </main>
   );

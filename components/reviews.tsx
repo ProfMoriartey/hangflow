@@ -11,8 +11,8 @@ export default function Reviews() {
 
   return (
     <section ref={ref} id="reviews" className="scroll-mt-28 mb-28">
-      <SectionHeading>Students Reviews</SectionHeading>
-      <div className="grid grid-rows-2 grid-cols-2 max-w-2xl gap-3">
+      <SectionHeading>Reviews</SectionHeading>
+      <div className="grid grid-rows-4 grid-cols-4 max-w-2xl gap-3">
         {reviewsData.map((review, index) => (
           <React.Fragment key={index}>
             <Review {...review} />

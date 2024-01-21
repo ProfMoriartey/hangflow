@@ -85,7 +85,8 @@ export default function Header() {
       >
         <a
           className="group bg-[#54ADFF] px-4 py-2.5 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
+          target="_blank"
         >
           Documents{" "}
           <BsArrowRight className="opacity-100 group-hover:translate-x-1 transition" />

@@ -59,10 +59,10 @@ export default function Intro() {
           }}
         >
           <Link
-            href="#contact"
+            href="#events"
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
-              setActiveSection("Contact");
+              setActiveSection("Events");
               setTimeOfLastClick(Date.now());
             }}
           >
@@ -72,21 +72,21 @@ export default function Intro() {
           <div className="flex gap-2">
             <a
               className=" p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-solid border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.linkedin.com/in/aramis-soto-494b57272/"
+              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
               target="_blank"
             >
               <BsLinkedin />
             </a>
             <a
               className="p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.linkedin.com/in/aramis-soto-494b57272/"
+              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
               target="_blank"
             >
               <BsInstagram />
             </a>
             <a
               className=" p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.linkedin.com/in/aramis-soto-494b57272/"
+              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
               target="_blank"
             >
               <FaFacebookF />
