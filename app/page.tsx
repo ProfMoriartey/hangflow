@@ -2,7 +2,7 @@ import About from "@/components/about";
 import Contact from "@/components/contact";
 import Qualifications from "@/components/qualifications";
 import Intro from "@/components/intro";
-import Services from "@/components/services";
+// import Services from "@/components/services";
 import SectionDivider from "@/components/section-divider";
 import Reviews from "@/components/reviews";
 import CheckEvents from "@/components/check-events";
