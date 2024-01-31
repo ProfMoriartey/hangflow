@@ -79,10 +79,18 @@ export default function Header() {
         </ul>
       </nav>
       <motion.div
-        className="fixed invisible lg:visible lg:top-6 lg:-right-9"
+        className="fixed invisible lg:visible lg:top-6 lg:-right-9 flex flex-row"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
+        <div className="flex flex-row gap-3 m-3">
+          <div>
+            <Link href={"/en"}>EN</Link>
+          </div>
+          <div>
+            <Link href={"/fi"}>FI</Link>
+          </div>
+        </div>
         <a
           className="group bg-[#54ADFF] px-4 py-2.5 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
