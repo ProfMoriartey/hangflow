@@ -23,7 +23,7 @@ export default function Header() {
       >
         <Image
           src="/icon.png"
-          alt="Ricardo portrait"
+          alt="Hangflow Logo"
           width={75}
           height="2000"
           quality="95"
@@ -76,6 +76,15 @@ export default function Header() {
               </Link>
             </motion.li>
           ))}
+          <div className="flex flex-row m-3 gap-1">
+            <div>
+              <Link href={"/en"}>EN</Link>
+            </div>
+
+            <div>
+              <Link href={"/fi"}>FI</Link>
+            </div>
+          </div>
         </ul>
       </nav>
       <motion.div
