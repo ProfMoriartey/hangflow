@@ -53,8 +53,71 @@ export default function About() {
           individual, built upon the guiding principle of "by youth, for youth.
         </p>
       </div>
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div>
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left mt-6">
+        <a
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold text-center`}>
+            Equity{" "}
+            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span> */}
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-center`}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            assumenda, perspiciatis, nostrum sapiente explicabo, aspernatur
+            saepe nesciunt numquam tempora asperiores voluptatum earum ut dicta
+            ullam.
+          </p>
+        </a>
 
-      <div className="flex flex-row">
+        <a
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold text-center`}>
+            Safer & Braver Space{" "}
+            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span> */}
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-center`}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            sapiente veniam, ut nostrum et iusto vero enim.
+          </p>
+        </a>
+
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold text-center`}>
+            Empowerment{" "}
+            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span> */}
+          </h2>
+          <p
+            className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance text-center`}
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium tenetur nemo, ea culpa delectus voluptatem nobis in
+            veritatis ipsum. Commodi porro consequuntur totam ut, beatae eveniet
+            ipsum similique.
+          </p>
+        </a>
+      </div>
+
+      {/* new */}
+      {/* <div className="flex flex-row">
         <div className="pt-4 pb-7 px-2 sm:pl-10 sm:pr-2 sm:pt-10 h-full sm:group-even:ml-[18rem]">
           <Image
             src="/filter.png"
@@ -95,8 +158,8 @@ export default function About() {
             background, gender, ethnicity, or socioeconomic status.
           </p>
         </div>
-      </div>
-
+      </div> */}
+      {/* old */}
       {/* <div className="grid grid-cols-3 gap-3">
         <motion.div ref={ref} className="group mb-3 sm:mb-8 last:mb-0">
           <section className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden sm:pr-4 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-4 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
