@@ -31,13 +31,13 @@ export default function Contact() {
     >
       <SectionHeading>Contact Us</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      {/* <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:hangflow@gmail.com">
           hangflow@gmail.com
         </a>{" "}
         or through this form.
-      </p>
+      </p> */}
 
       <form
         className="mt-10 flex flex-col dark:text-black"

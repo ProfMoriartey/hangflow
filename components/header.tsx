@@ -76,7 +76,7 @@ export default function Header() {
               </Link>
             </motion.li>
           ))}
-          <div className="flex flex-row m-3 gap-1">
+          <div className="flex flex-row m-3 gap-1 sm:invisible sm:absolute">
             <div>
               <Link href={"/en"}>EN</Link>
             </div>
@@ -88,11 +88,11 @@ export default function Header() {
         </ul>
       </nav>
       <motion.div
-        className="fixed invisible lg:visible lg:top-6 lg:-right-9 flex flex-row"
+        className="fixed invisible lg:visible lg:top-6 lg:-right-20 flex flex-row items-center justify-center sm:-mt-2.5"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
-        <div className="flex flex-row gap-3 m-3">
+        <div className="flex flex-row gap-3 m-3 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center">
           <div>
             <Link href={"/en"}>EN</Link>
           </div>
