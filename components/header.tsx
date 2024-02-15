@@ -22,9 +22,9 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
         <Image
-          src="/icon.png"
+          src="/icon2.png"
           alt="Hangflow Logo"
-          width={75}
+          width={70}
           height="2000"
           quality="95"
           priority={true}
