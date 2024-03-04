@@ -17,7 +17,7 @@ export default function Member({ name, country, description }: MemberProps) {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <div>
+    <div className="pb-32">
       <motion.div
         ref={ref}
         style={{

@@ -17,18 +17,18 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed invisible md:visible md:top-3 md:left-20 "
+        className="fixed invisible ml-20 md:visible md:top-3 md:left-20 "
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
         <Image
-          src="/icon2.png"
+          src="/logo.png"
           alt="Hangflow Logo"
-          width={70}
+          width={140}
           height="2000"
           quality="95"
           priority={true}
-          className="mb-0 sm:mb-20 sm:mr-10"
+          className="mb-0 -mt-2"
         />
       </motion.div>
       <motion.div
@@ -88,7 +88,7 @@ export default function Header() {
         </ul>
       </nav>
       <motion.div
-        className="fixed invisible lg:visible lg:top-6 lg:-right-20 flex flex-row items-center justify-center sm:-mt-2.5"
+        className="fixed invisible lg:visible lg:top-6 lg:-right-20 flex flex-row items-center justify-center sm:mr-10 sm:-mt-2.5"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >

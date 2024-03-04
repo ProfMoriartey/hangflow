@@ -10,7 +10,7 @@ export default function CheckEvents() {
   const { ref } = useSectionInView("Events");
 
   return (
-    <section ref={ref} id="events" className="pt-20">
+    <section ref={ref} id="events" className="py-20">
       <SectionHeading> </SectionHeading>
       <div className="flex flex-row mb-16">
         <div className=" ">
