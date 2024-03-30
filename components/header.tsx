@@ -24,7 +24,7 @@ export default function Header() {
         <Image
           src="/logo.png"
           alt="Hangflow Logo"
-          width={140}
+          width={110}
           height="2000"
           quality="95"
           priority={true}
@@ -96,6 +96,7 @@ export default function Header() {
           <div>
             <Link href={"/en"}>EN</Link>
           </div>
+          <span className="-ml-2 -mr-2">||</span>
           <div>
             <Link href={"/fi"}>FI</Link>
           </div>

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center px-2">
       {/* {t("title")} */}
-      <Intro />
+      <Intro intro1={t("intro1")} intro2={t("intro2")}/>
       <SectionDivider />
       <About />
       <CheckEvents />

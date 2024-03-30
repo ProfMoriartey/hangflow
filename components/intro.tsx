@@ -12,7 +12,10 @@ import { BsInstagram } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Intro() {
+export default function Intro({ intro1, intro2 }:{
+  intro1: string,
+  intro2: string
+}) {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -28,15 +31,13 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-semibold font-body flex justify-start">
-            Safe place for{" "}
+          <span className="font-semibold text-left font-body flex justify-start">
+            {intro1}{" "}
           </span>
-          <span className="font-semibold font-body flex justify-start">
-            everybody to{" "}
+          <span className="font-semibold text-left font-body flex justify-start">
+            {intro2}{" "}
           </span>
-          <span className="font-semibold font-body flex justify-start">
-            {""}join
-          </span>
+          
         </motion.h1>
 
         <motion.h1
