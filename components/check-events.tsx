@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
+import Link from "next/link";
 
 export default function CheckEvents() {
   const { ref } = useSectionInView("Events");
@@ -35,11 +36,24 @@ export default function CheckEvents() {
               <span className="font-medium font-body flex justify-start">
                 events out!{" "}
               </span>
+              
             </motion.h1>
             <p className="mb-5 mt-2 px-4 max-w-sm">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
+            <div className="-ml-2 "> <Link
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
+            className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+          
+          >
+            READ MORE
+           
+          </Link>
+
+              </div>
+             
           </div>
           <div className="flex pt-20 ">
             <Image

@@ -5,7 +5,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { FaFilter } from "react-icons/fa";
+import Link from "next/link";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -40,7 +40,17 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="flex justify-start font-semibold">CHECK IT </span>
+            <div className="-mx-5"><Link
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
+            className=" group text-black border borderBlack mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+          
+          >
+            READ MORE
+           
+          </Link></div>
+            
+            {/* <span className="flex justify-start font-semibold"><a href="https://www.instagram.com/hangfloww/?igsh=MWNoajYwdDc4am9tZA%3D%3D" target="_blank">CHECK IT </a></span> */}
           </motion.h1>
         </div>
 
@@ -68,10 +78,7 @@ export default function About() {
             </span> */}
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-center`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            assumenda, perspiciatis, nostrum sapiente explicabo, aspernatur
-            saepe nesciunt numquam tempora asperiores voluptatum earum ut dicta
-            ullam.
+            
           </p>
         </a>
 
@@ -88,8 +95,7 @@ export default function About() {
             </span> */}
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-center`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            sapiente veniam, ut nostrum et iusto vero enim.
+            
           </p>
         </a>
 
@@ -108,10 +114,7 @@ export default function About() {
           <p
             className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance text-center`}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium tenetur nemo, ea culpa delectus voluptatem nobis in
-            veritatis ipsum. Commodi porro consequuntur totam ut, beatae eveniet
-            ipsum similique.
+          
           </p>
         </a>
       </div>

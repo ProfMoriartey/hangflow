@@ -19,10 +19,10 @@ export const links = [
     name: "Events",
     hash: "#events",
   },
-  {
-    name: "Features",
-    hash: "#features",
-  },
+  // {
+  //   name: "Features",
+  //   hash: "#features",
+  // },
   {
     name: "Board",
     hash: "#board",

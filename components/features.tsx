@@ -7,12 +7,12 @@ import SectionHeading from "./section-heading";
 import Image from "next/image";
 
 export default function Features() {
-  const { ref } = useSectionInView("Features");
+  // const { ref } = useSectionInView("Features");
 
   return (
     <motion.section
-      ref={ref}
-      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 pt-32"
+      // ref={ref}
+      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-48 scroll-mt-28 pt-32"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -34,11 +34,11 @@ export default function Features() {
       </SectionHeading>
 
       <Image
-        src={"/activities-eng.png"}
+        src={"/features2.png"}
         width={1000}
         height={1000}
         alt={"Group Picture"}
-        className="mt-20"
+        className="mt-32"
       />
     </motion.section>
   );

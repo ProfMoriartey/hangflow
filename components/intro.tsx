@@ -23,7 +23,7 @@ export default function Intro({ intro1, intro2 }:{
     <section
       ref={ref}
       id="home"
-      className="flex flex-col sm:flex-row -mt-2 mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="flex flex-col sm:flex-row mt-4 mb-28 max-w-[50rem] text-center sm:-mb-10 scroll-mt-[100rem]"
     >
       <div className="max-w-sm flex flex-col">
         <motion.h1
@@ -60,14 +60,15 @@ export default function Intro({ intro1, intro2 }:{
           }}
         >
           <Link
-            href="#events"
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
               setTimeOfLastClick(Date.now());
             }}
           >
-            EVENTS
+            <a href="https://www.eventbrite.fi/o/hangflow-ry-83120236073" target="_blank">EVENTS</a>
             <MdOutlineEmojiEvents className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           <div className="flex gap-2">
@@ -87,7 +88,7 @@ export default function Intro({ intro1, intro2 }:{
             </a>
             <a
               className=" p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
+              href="https://www.facebook.com/HangFlow"
               target="_blank"
             >
               <FaFacebookF />
@@ -95,7 +96,7 @@ export default function Intro({ intro1, intro2 }:{
           </div>
         </motion.div>
       </div>
-      <div className="flex flex-reverse">
+      <div className="flex flex-reverse -mr-8">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -105,9 +106,9 @@ export default function Intro({ intro1, intro2 }:{
           }}
         >
           <Image
-            src="/hangflow.png"
+            src="/logo6.png"
             alt="Ricardo portrait"
-            width={250}
+            width={260}
             height="2000"
             quality="95"
             priority={true}
