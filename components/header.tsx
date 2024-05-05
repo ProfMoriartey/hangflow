@@ -93,12 +93,12 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
         <div className="flex flex-row px-5 gap-4 mt-[12px] mr-20 ">
-          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l-4 border-white">
-            <Link href={"/en"}>EN</Link>
+          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l">
+            <Link className="p-5" href={"/en"}>EN</Link>
           </div>
           <span className="-ml-2 -mr-2"></span>
-          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l-4 border-white">
-            <Link href={"/fi"}>FI</Link>
+          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l">
+            <Link className="p-5" href={"/fi"}>FI</Link>
           </div>
         </div>
         {/* <a

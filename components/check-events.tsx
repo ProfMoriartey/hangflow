@@ -42,7 +42,7 @@ export default function CheckEvents() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
-            <div className="-ml-2 "> <Link
+            <div className="ml-4 w-52"> <Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
             className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
