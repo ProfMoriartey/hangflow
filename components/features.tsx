@@ -12,7 +12,7 @@ export default function Features() {
   return (
     <motion.section
       // ref={ref}
-      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-48 scroll-mt-28 pt-32"
+      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-48 scroll-mt-28 pt-12 sm:pt-32"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

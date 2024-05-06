@@ -29,7 +29,7 @@ export default function BoardMembers() {
     >
       <SectionHeading>
         <motion.h1
-          className="mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col "
+          className="mb-5 mt-2 px-4 items-center text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col "
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -54,7 +54,7 @@ export default function BoardMembers() {
         <CarouselContent>
           {memberData.map((member, index) => (
             <React.Fragment key={index}>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem className=" basis-1/4 md:basis-1/2 lg:basis-1/3">
                 <Member {...member} />
               </CarouselItem>
             </React.Fragment>

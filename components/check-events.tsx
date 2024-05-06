@@ -11,10 +11,10 @@ export default function CheckEvents() {
   const { ref } = useSectionInView("Events");
 
   return (
-    <section ref={ref} id="events" className="py-20">
+    <section ref={ref} id="events" className="py-5 sm:py-20">
       <SectionHeading> </SectionHeading>
       <div className="flex flex-row mb-16">
-        <div className=" ">
+        <div className="absolute invisible sm:static sm:visible ">
           <Image
             src="/group-pic1.png"
             width={800}
@@ -38,15 +38,15 @@ export default function CheckEvents() {
               </span>
               
             </motion.h1>
-            <p className="mb-5 mt-2 px-4 max-w-sm">
+            <p className="mb-5 mt-2 px-4 max-w-sm absolute invisible sm:static sm:visible">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
-            <div className="ml-4 w-52"> <Link
+            <div className="ml-4 w-52 absolute invisible sm:static sm:visible"> <Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
             className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
-          
+        
           >
             READ MORE
            
@@ -55,15 +55,36 @@ export default function CheckEvents() {
               </div>
              
           </div>
-          <div className="flex pt-20 ">
+          <div className="sm:absolute sm:invisible static visible ">
+          <Image
+            src="/group-pic1.png"
+            width={800}
+            height={800}
+            alt={"Group Image"}
+            className="rounded-lg sm:-ml-16"
+          />
+        </div>
+          <div className="flex sm:pt-20 ">
             <Image
               src={"/group-pic2.png"}
               width={300}
               height={500}
               alt={"Group Picture"}
-              className="-ml-36 rounded-lg border-8 border-white"
+              className="-mt-10 sm:-ml-36 rounded-lg border-8 border-white"
             />
           </div>
+          
+        <div className="mt-4 ml-4 w-52 sm:absolute sm:invisible static visible"> <Link
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
+            className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+          
+          >
+            DISCOVER MORE
+           
+          </Link>
+
+              </div>
         </div>
       </div>
 

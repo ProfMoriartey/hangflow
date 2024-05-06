@@ -13,17 +13,20 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-5 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
+      <div className="invisible sm:visible absolute sm:static">
       <SectionHeading>About Us</SectionHeading>
-      <div className="flex flex-row">
+      </div>
+      
+      <div className="flex flex-col sm:flex-row">
         <div className="basis-1/2 flex flex-col">
           <motion.h1
-            className="mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col"
+            className="-mb-4 sm:mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -40,7 +43,7 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <div className="-mx-4 w-52"><Link
+            <div className="-mx-4 w-52 -mb-20 sm:mb-0 invisible sm:visible"><Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
             className=" group text-sm text-black border borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
@@ -54,7 +57,7 @@ export default function About() {
           </motion.h1>
         </div>
 
-        <p className="basis-1/2 mt-5 mb-12 text-sm text-left">
+        <p className="basis-1/2 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
           HangFlow ry is a non-profit youth organization located in Turku,
           founded by the passion and drive of young activists in the summer of
           2020. Our unwavering commitment revolves around championing the voices
@@ -62,6 +65,15 @@ export default function About() {
           fundamental objective is to create a safe space for every young
           individual, built upon the guiding principle of "by youth, for youth.
         </p>
+        <div className="-mx-4 w-52 ml-5 - visible sm:invisible"><Link
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
+            className=" group text-sm text-black border borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+          
+          >
+            READ MORE
+           
+          </Link></div>
       </div>
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[680px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[380px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[560px] z-[-1]"></div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left mt-6">

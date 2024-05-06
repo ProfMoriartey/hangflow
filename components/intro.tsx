@@ -23,25 +23,38 @@ export default function Intro({ intro1, intro2 }:{
     <section
       ref={ref}
       id="home"
-      className="flex flex-col sm:flex-row mt-4 mb-28 max-w-[50rem] text-center sm:-mb-10 scroll-mt-[100rem]"
+      className="flex flex-row mt-4 mb-28 max-w-[50rem] text-center sm:-mb-10 scroll-mt-[100rem]"
     >
+      <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
       <div className="max-w-sm flex flex-col">
+        <div className="flex flex-row">
         <motion.h1
-          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1] sm:text-5xl flex flex-col"
+          className="sm:mb-10 sm:mt-4 sm:px-4 text-2xl  -ml-9 flex-auto font-medium !leading-[1] sm:text-5xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-semibold text-left font-body flex justify-start">
+          <span className="font-semibold text-right w-28  font-body flex justify-start">
             {intro1}{" "}
           </span>
-          <span className="font-semibold text-left font-body flex justify-start">
+          <span className="font-semibold text-right w-28 font-body flex justify-start">
             {intro2}{" "}
           </span>
           
         </motion.h1>
+        <Image
+            src="/logo6.png"
+            alt="Ricardo portrait"
+            width={80}
+            height="2000"
+            quality="95"
+            priority={true}
+            className="mb-5 sm:mb-20 sm:mr-10 ml-20 visible sm:invisible"
+          />
+        </div>
 
         <motion.h1
-          className="mb-10 mt-4 px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start"
+          className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -52,7 +65,7 @@ export default function Intro({ intro1, intro2 }:{
         </motion.h1>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col -ml-7 sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -112,8 +125,9 @@ export default function Intro({ intro1, intro2 }:{
             height="2000"
             quality="95"
             priority={true}
-            className="mb-0 sm:mb-20 sm:mr-10"
+            className="mb-0 sm:mb-20 sm:mr-10 z-10 invisible absolute sm:visible"
           />
+          
         </motion.div>
       </div>
     </section>
