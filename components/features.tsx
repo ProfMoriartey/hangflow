@@ -34,7 +34,7 @@ export default function Features() {
       </SectionHeading>
 
       <Image
-        src={"/features2.png"}
+        src={"/features-en.png"}
         width={1000}
         height={1000}
         alt={"Group Picture"}
