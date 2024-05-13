@@ -1,7 +1,18 @@
 {
   "Index": {
+
     "title": "Hello world!",
     "intro1": "Safer place for",
-    "intro2": "everybody to join"
+    "intro2": "everybody to join",
+    "aboutTitle": "About us",
+    "aboutHeader": "What is HangFlow ry",
+    "aboutDesc": "HangFlow ry is a non-profit youth organization located in Turku, founded by the passion and drive of young activists in the summer of 2020. Our unwavering commitment revolves around championing the voices of the youth and propelling the cause of equity and equality. Our fundamental objective is to create a safe space for every young individual, built upon the guiding principle of by youth, for youth.",
+    "ReadMore": "Read More!",
+    "checkEvents": "Check our events out!",
+    "headerHome": "Home",
+    "headerAbout": "About",
+    "headerEvents": "Events",
+    "headerBoard": "Board",
+    "headerContact": "Contact"
   }
 }

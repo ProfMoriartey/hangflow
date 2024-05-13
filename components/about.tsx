@@ -7,7 +7,12 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 
-export default function About() {
+export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: {
+  aboutTitle: string,
+  aboutDesc: string,
+  aboutHeader: string,
+  ReadMore: string
+}) {
   const { ref } = useSectionInView("About");
 
   return (
@@ -20,7 +25,7 @@ export default function About() {
       id="about"
     >
       <div className="invisible sm:visible absolute sm:static">
-      <SectionHeading>About Us</SectionHeading>
+      <SectionHeading>{aboutTitle}</SectionHeading>
       </div>
       
       <div className="flex flex-col sm:flex-row">
@@ -30,12 +35,12 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-medium font-body flex justify-start">
-              What is{" "}
+            <span className="font-medium font-body flex text-left justify-start">
+              {aboutHeader}{" "}
             </span>
-            <span className="font-medium font-body flex justify-start">
+            {/* <span className="font-medium font-body flex justify-start">
               HangFlow ry{" "}
-            </span>
+            </span> */}
           </motion.h1>
 
           <motion.h1
@@ -49,7 +54,7 @@ export default function About() {
             className=" group text-sm text-black border borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
           
           >
-            READ MORE
+            {ReadMore}
            
           </Link></div>
             
@@ -58,12 +63,7 @@ export default function About() {
         </div>
 
         <p className="basis-1/2 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
-          HangFlow ry is a non-profit youth organization located in Turku,
-          founded by the passion and drive of young activists in the summer of
-          2020. Our unwavering commitment revolves around championing the voices
-          of the youth and propelling the cause of equity and equality. Our
-          fundamental objective is to create a safe space for every young
-          individual, built upon the guiding principle of "by youth, for youth.
+          {aboutDesc}
         </p>
         <div className="-mx-4 w-52 ml-5 - visible sm:invisible"><Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
@@ -71,7 +71,7 @@ export default function About() {
             className=" group text-sm text-black border borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
           
           >
-            READ MORE
+            {ReadMore}
            
           </Link></div>
       </div>

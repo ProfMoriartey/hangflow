@@ -17,8 +17,8 @@ export default function Home() {
       {/* {t("title")} */}
       <Intro intro1={t("intro1")} intro2={t("intro2")}/>
       <SectionDivider />
-      <About />
-      <CheckEvents />
+      <About aboutTitle={t("aboutTitle")} aboutDesc={t("aboutDesc")} aboutHeader={t("aboutHeader")} ReadMore={t("ReadMore")}/>
+      <CheckEvents checkEvents={t("checkEvents")} ReadMore={t("ReadMore")}/>
       <Features />
       <BoardMembers />
       {/* <Reviews /> */}

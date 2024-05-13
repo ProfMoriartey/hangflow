@@ -7,7 +7,10 @@ import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import Link from "next/link";
 
-export default function CheckEvents() {
+export default function CheckEvents({checkEvents, ReadMore}:{
+  checkEvents: string,
+  ReadMore: string
+}) {
   const { ref } = useSectionInView("Events");
 
   return (
@@ -31,11 +34,11 @@ export default function CheckEvents() {
               animate={{ opacity: 1, y: 0 }}
             >
               <span className="font-medium font-body flex justify-start">
-                Check our{" "}
+                {checkEvents}{" "}
               </span>
-              <span className="font-medium font-body flex justify-start">
+              {/* <span className="font-medium font-body flex justify-start">
                 events out!{" "}
-              </span>
+              </span> */}
               
             </motion.h1>
             <p className="mb-5 mt-2 px-4 max-w-sm absolute invisible sm:static sm:visible">
@@ -48,7 +51,7 @@ export default function CheckEvents() {
             className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
         
           >
-            READ MORE
+            {ReadMore}
            
           </Link>
 

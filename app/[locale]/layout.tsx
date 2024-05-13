@@ -7,6 +7,7 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { Poppins } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -25,7 +26,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
   params: { locale: string };
-}) {
+}) 
+
+{
+  const t = useTranslations("Index");
   return (
     <html lang={locale} className="!scroll-smooth">
       <body
@@ -43,7 +47,7 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+            <Header headerHome={t("headerHome")} headerAbout={t("headerAbout")} headerEvents={t("headerEvents")} headerBoard={t("headerBoard")} headerContact={t("headerContact")}/>
             {children}
             <Footer />
 
