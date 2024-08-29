@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -9,41 +8,53 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { HiDownload } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useLocale } from 'next-intl';
 
-export default function Header( {headerHome, headerAbout, headerEvents, headerBoard, headerContact}:{
+export default function Header({ headerHome, headerAbout, headerEvents, headerBoard, headerContact }: {
   headerHome: string,
   headerAbout: string,
   headerEvents: string,
   headerBoard: string,
   headerContact: string
 }) {
+
+  const locale  = useLocale();
+  console.log(locale)
+ 
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
-    const links = [
-      {
-        name: [headerHome],
-        hash: "#home",
-      },
-      {
-        name: [headerAbout],
-        hash: "#about",
-      },
-      {
-        name: [headerEvents],
-        hash: "#events",
-      },
-      {
-        name: [headerBoard],
-        hash: "#board",
-      },
-      {
-        name: [headerContact],
-        hash: "#contact",
-      },
-    ] as const;
 
+  const links = [
+    {
+      name: [headerHome],
+      hash: "#home",
+    },
+    {
+      name: [headerAbout],
+      hash: "#about",
+    },
+    {
+      name: [headerEvents],
+      hash: "#events",
+    },
+    {
+      name: [headerBoard],
+      hash: "#board",
+    },
+    {
+      name: [headerContact],
+      hash: "#contact",
+    },
+  ] as const;
+
+  function handleLanguage(){
+    console.log('handle')
+  }
+  
   return (
-    <header className="z-[999] relative">
+    <header className="z-[999] relative ">
       <motion.div
         className="fixed invisible ml-20 md:visible md:top-3 md:left-20 "
         initial={{ y: -100, x: "-50%", opacity: 0 }}
@@ -65,27 +76,27 @@ export default function Header( {headerHome, headerAbout, headerEvents, headerBo
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
 
-{/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
+      {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
 
-      <nav className="flex fixed top-[0.15rem] left-[15%] sm:left-1/2 h-12 sm:-translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[20rem] flex-wrap sm:items-center sm:justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-7">
-          <li className="px-2 sm:p-2 mx-2">{headerHome}</li>
-          <li className="px-2 sm:p-2 mx-2">{headerAbout}</li>
-          <li className="px-2 sm:p-2 mx-2">{headerEvents}</li>
+      <nav className="flex fixed top-[0.15rem] left-[15%] sm:left-1/2 h-12 sm:-translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 max-sm:max-w-max">
+        <ul className="flex lg:w-[20rem] flex-wrap sm:items-center sm:justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-7">
+          <li className="px-2 sm:p-2 mx-2"><Link href={'/' + locale}>{headerHome}</Link></li>
+          <li className="px-2 sm:p-2 mx-2"><Link href={'/' + locale +'/about'}>{headerAbout}</Link></li>
+          <li className="px-2 sm:p-2 mx-2"><Link href={'/' +locale + '/events'}>{headerEvents}</Link></li>
           <li className="px-2 sm:p-2 mx-2">{headerBoard}</li>
           <li className="px-2 sm:p-2 mx-2">{headerContact}</li>
           <div className="flex flex-row ml-6 gap-1 sm:invisible sm:absolute">
-            <div>
+            <button >
               <Link href={"/en"}>EN</Link>
-            </div>
+            </button>
 
-            <div>
+            <button >
               <Link href={"/fi"}>FI</Link>
-            </div>
+            </button>
           </div>
         </ul>
       </nav>
-{/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
+      {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
 
       {/* <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-7">

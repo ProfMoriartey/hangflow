@@ -12,6 +12,10 @@
     "headerAbout": "Meistä",
     "headerEvents": "Tapahtumat",
     "headerBoard": "Hallitus",
-    "headerContact": "Yhteydenotto"
+    "headerContact": "Yhteydenotto",
+    "aboutPage": {
+      "ourStory": "Meidän tarinamme",
+      "ourMission": "tehtävämme"
+    }
   }
 }

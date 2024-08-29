@@ -11,11 +11,14 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useLocale } from "next-intl";
 
 export default function Intro({ intro1, intro2 }:{
   intro1: string,
   intro2: string
 }) {
+
+  const locale  = useLocale();
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -73,15 +76,14 @@ export default function Intro({ intro1, intro2 }:{
           }}
         >
           <Link
-            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
-            target="_blank"
+            href={"/"+ locale +"/events"}
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
               setTimeOfLastClick(Date.now());
             }}
           >
-            <a href="https://www.eventbrite.fi/o/hangflow-ry-83120236073" target="_blank">EVENTS</a>
+            EVENTS
             <MdOutlineEmojiEvents className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           <div className="flex gap-2">

@@ -47,10 +47,9 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header headerHome={t("headerHome")} headerAbout={t("headerAbout")} headerEvents={t("headerEvents")} headerBoard={t("headerBoard")} headerContact={t("headerContact")}/>
+            <Header  headerHome={t("headerHome")} headerAbout={t("headerAbout")} headerEvents={t("headerEvents")} headerBoard={t("headerBoard")} headerContact={t("headerContact")}/>
             {children}
             <Footer />
-
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>

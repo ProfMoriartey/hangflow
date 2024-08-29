@@ -6,13 +6,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function CheckEvents({checkEvents, ReadMore}:{
   checkEvents: string,
   ReadMore: string
 }) {
   const { ref } = useSectionInView("Events");
-
+  const locale  = useLocale();
   return (
     <section ref={ref} id="events" className="py-5 sm:py-20">
       <SectionHeading> </SectionHeading>
@@ -46,8 +47,7 @@ export default function CheckEvents({checkEvents, ReadMore}:{
               officia deserunt mollit anim id est laborum.
             </p>
             <div className="ml-4 w-52 absolute invisible sm:static sm:visible"> <Link
-            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
-            target="_blank"
+            href={"/"+ locale +"/events"}
             className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
         
           >

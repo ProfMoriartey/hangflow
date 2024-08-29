@@ -13,7 +13,7 @@ import Features from "@/components/features";
 export default function Home() {
   const t = useTranslations("Index");
   return (
-    <main className="flex flex-col items-center px-2">
+    <main className="flex flex-col items-center justify-center max-sm:max-w-full max-sm:items-center max-sm:justify-center max-sm:pl-5">
       {/* {t("title")} */}
       <Intro intro1={t("intro1")} intro2={t("intro2")}/>
       <SectionDivider />
