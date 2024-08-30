@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-export default function aboutUs() {
+export default function AboutUs() {
     const t = useTranslations("Index");
     return (
         <div className="flex w-full items-center justify-center">
