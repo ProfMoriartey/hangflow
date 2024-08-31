@@ -24,6 +24,7 @@ export default function Header({ headerHome, headerAbout, headerEvents, headerBo
   let pathName;
   
 console.log(locale)
+
   function handleLanguage(lang:string){
     pathName = window.location.pathname;
     let newPathName = pathName;
@@ -36,6 +37,7 @@ console.log(locale)
       
     }
     if(newPathName != pathName)
+      console.log(newPathName)
       router.push(newPathName);
   }
   
@@ -72,11 +74,11 @@ console.log(locale)
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>{headerLanguage}</button>
                 <div className={styles.dropdownContent}>
-                  <Link href={"/en"}>EN</Link>
-                  <Link href={"/fi"}>FI</Link>
+                  <button className="w-full text-left" onClick={() => handleLanguage('en')}>EN</button>
+                  <button className="w-full text-left" onClick={() => handleLanguage('fi')}>FI</button>
                 </div>
               </div>
-            </li>
+            </li> 
           </ul>
         </nav>
         <div className="max-sm:flex flex-row justify-between hidden">
