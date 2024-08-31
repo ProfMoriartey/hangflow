@@ -1,0 +1,129 @@
+.dropbtn {
+  font-size: 16px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdownContent a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+
+/* ------ */
+
+.dropbtnMobile {
+  font-size: 16px;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+
+.dropdownMobile {
+  position: relative;
+  display: inline-block;
+  min-height: 100%;
+  width:15%;
+}
+
+
+.dropdownContentMobile {
+  display: none;
+  position: absolute;
+  right:0px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+
+.dropdownContentMobile button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdownContentMobile a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdownMobile:hover .dropdownContentMobile {
+  display: block;
+}
+
+
+/* ------- */
+
+.menubtn {
+  font-size: 16px;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+  min-height: 100%;
+  width:15%;
+}
+
+.menuContent {
+  display: none;
+  position: absolute;
+  right:0px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.menuContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.menuContent a:hover {
+  background-color: #ddd;
+}
+
+.menu:hover .menuContent {
+  display: block;
+}
+

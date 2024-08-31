@@ -2,61 +2,47 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
-import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { HiDownload } from "react-icons/hi";
-import { BsArrowRight } from "react-icons/bs";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import { useLocale } from 'next-intl';
+import styles from '../styles/header.module.css';
+import { BiWorld } from "react-icons/bi";
 
-export default function Header({ headerHome, headerAbout, headerEvents, headerBoard, headerContact }: {
+import { TiThMenu } from "react-icons/ti";
+import { useRouter } from 'next/navigation';
+
+export default function Header({ headerHome, headerAbout, headerEvents, headerBoard, headerContact, headerLanguage }: {
   headerHome: string,
   headerAbout: string,
   headerEvents: string,
   headerBoard: string,
-  headerContact: string
+  headerContact: string,
+  headerLanguage: string
 }) {
-
-  const locale  = useLocale();
-  console.log(locale)
- 
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
-
-  const links = [
-    {
-      name: [headerHome],
-      hash: "#home",
-    },
-    {
-      name: [headerAbout],
-      hash: "#about",
-    },
-    {
-      name: [headerEvents],
-      hash: "#events",
-    },
-    {
-      name: [headerBoard],
-      hash: "#board",
-    },
-    {
-      name: [headerContact],
-      hash: "#contact",
-    },
-  ] as const;
-
-  function handleLanguage(){
-    console.log('handle')
+  const router = useRouter();
+  const locale = useLocale();
+  let pathName;
+  
+console.log(locale)
+  function handleLanguage(lang:string){
+    pathName = window.location.pathname;
+    let newPathName = pathName;
+    if(locale === 'fi' && lang === 'en'){
+      newPathName = pathName.replace("/fi",'/en/')
+      console.log(pathName)
+    }
+    if(locale === 'en' && lang === 'fi'){
+      newPathName = pathName.replace("/en",'/fi/')
+      console.log(pathName)
+    }
+    if(newPathName != pathName)
+      router.push(newPathName);
   }
   
   return (
-    <header className="z-[999] relative ">
+    <header className="w-full h-24 sm:flex flex-row">
       <motion.div
-        className="fixed invisible ml-20 md:visible md:top-3 md:left-20 "
+        className="fixed max-sm:hidden ml-20 md:inline md:top-3 md:left-20 z-[999]"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
@@ -71,106 +57,57 @@ export default function Header({ headerHome, headerAbout, headerEvents, headerBo
         />
       </motion.div>
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[38rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-      ></motion.div>
-
-      {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
-
-      <nav className="flex fixed top-[0.15rem] left-[15%] sm:left-1/2 h-12 sm:-translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 max-sm:max-w-max">
-        <ul className="flex lg:w-[20rem] flex-wrap sm:items-center sm:justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-7">
-          <li className="px-2 sm:p-2 mx-2"><Link href={'/' + locale}>{headerHome}</Link></li>
-          <li className="px-2 sm:p-2 mx-2"><Link href={'/' + locale +'/about'}>{headerAbout}</Link></li>
-          <li className="px-2 sm:p-2 mx-2"><Link href={'/' +locale + '/events'}>{headerEvents}</Link></li>
-          <li className="px-2 sm:p-2 mx-2">{headerBoard}</li>
-          <li className="px-2 sm:p-2 mx-2">{headerContact}</li>
-          <div className="flex flex-row ml-6 gap-1 sm:invisible sm:absolute">
-            <button >
-              <Link href={"/en"}>EN</Link>
-            </button>
-
-            <button >
-              <Link href={"/fi"}>FI</Link>
-            </button>
-          </div>
-        </ul>
-      </nav>
-      {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
-
-      {/* <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-7">
-          {links.map((link) => (
-            <motion.li
-              className="h-3/4 flex items-center justify-center relative"
-              key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-            >
-              <Link
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-300",
-                  {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
-                  }
-                )}
-                href={link.hash}
-                onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
-                }}
-              >
-                {link.name}
-
-                {link.name === activeSection && (
-                  <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
-                    layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 380,
-                      damping: 30,
-                    }}
-                  ></motion.span>
-                )}
-              </Link>
-            </motion.li>
-          ))}
-          <div className="flex flex-row m-3 gap-1 sm:invisible sm:absolute">
-            <div>
-              <Link href={"/en"}>EN</Link>
-            </div>
-
-            <div>
-              <Link href={"/fi"}>FI</Link>
-            </div>
-          </div>
-        </ul>
-      </nav> */}
-
-      <motion.div
-        className="fixed invisible lg:visible lg:top-6 lg:-right-20 flex flex-row items-center justify-center sm:mr-10 sm:-mt-2.5"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:flex sm:flex-row sm:justify-center sm:items-center sm:h-[3.25rem] sm:w-[100vh] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
-        <div className="flex flex-row px-5 gap-4 mt-[12px] mr-20 ">
-          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l">
-            <Link className="p-5" href={"/en"}>EN</Link>
-          </div>
-          <span className="-ml-2 -mr-2"></span>
-          <div className="flex item-center rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:h-[3rem] sm:w-[4rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center space-x-2 px-4 py-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-[#54ADFF] border-l">
-            <Link className="p-5" href={"/fi"}>FI</Link>
+        <nav className="flex px-10 fixed sm:left-1/2 h-full sm:-translate-x-1/2 sm:h-full sm:py-0 sm:w-full sm:flex sm:flex-row sm:justify-center sm:items-center max-sm:hidden">
+          <ul className="flex flex-wrap sm:items-center h-full sm:justify-around gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-full sm:flex-nowrap sm:gap-7">
+            <li ><Link href={'/' + locale}>{headerHome}</Link></li>
+            <li ><Link href={'/' + locale + '/about'}>{headerAbout}</Link></li>
+            <li ><Link href={'/' + locale + '/events'}>{headerEvents}</Link></li>
+            <li >{headerBoard}</li>
+            <li >{headerContact}</li>
+            <li>
+              <div className={styles.dropdown}>
+                <button className={styles.dropbtn}>{headerLanguage}</button>
+                <div className={styles.dropdownContent}>
+                  <Link href={"/en"}>EN</Link>
+                  <Link href={"/fi"}>FI</Link>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div className="max-sm:flex flex-row justify-between hidden">
+          <Image
+            src="/logo.png"
+            alt="Hangflow Logo"
+            width={70}
+            height={70}
+            quality="95"
+            priority={true}
+          />
+          <div className="flex flex-row gap-8 w-3/5 justify-end pr-4">
+            <div className={styles.dropdownMobile}>
+              <button className={styles.dropbtnMobile}><BiWorld className="w-full h-full" /></button>
+              <div className={styles.dropdownContentMobile}>
+                <button onClick={() => handleLanguage('en')}>EN</button>
+                <button onClick={() => handleLanguage('fi')}>FI</button>
+              </div>
+            </div>
+            <div className={styles.menu}>
+              <button className={styles.menubtn}><TiThMenu className="w-full h-full" /></button>
+              <div className={styles.menuContent}>
+                <Link href={'/' + locale}>{headerHome}</Link>
+                <Link href={'/' + locale + '/about'}>{headerAbout}</Link>
+                <Link href={'/' + locale + '/events'}>{headerEvents}</Link>
+                <Link href={'/' + locale}>{headerBoard}</Link>
+                <Link href={'/' + locale}>{headerContact}</Link>
+              </div>
+            </div>
           </div>
         </div>
-        {/* <a
-          className="group bg-[#54ADFF] px-4 py-2.5 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
-          target="_blank"
-        >
-          Get Involved{" "}
-          <BsArrowRight className="opacity-100 group-hover:translate-x-1 transition" />
-        </a> */}
       </motion.div>
     </header>
   );

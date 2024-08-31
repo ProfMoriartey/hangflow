@@ -13,12 +13,12 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
 
-export default function Intro({ intro1, intro2 }:{
+export default function Intro({ intro1, intro2 }: {
   intro1: string,
   intro2: string
 }) {
 
-  const locale  = useLocale();
+  const locale = useLocale();
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -26,14 +26,11 @@ export default function Intro({ intro1, intro2 }:{
     <section
       ref={ref}
       id="home"
-      className="flex flex-row mt-4 mb-28 max-w-[50rem] text-center sm:-mb-10 scroll-mt-[100rem]"
+      className="flex flex-row justify-center items-center w-full py-16"
     >
-      <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-      <div className="max-w-sm flex flex-col">
-        <div className="flex flex-row">
+      <div className="flex flex-col w-1/3">
         <motion.h1
-          className="sm:mb-10 sm:mt-4 sm:px-4 text-2xl  -ml-9 flex-auto font-medium !leading-[1] sm:text-5xl flex flex-col"
+          className="sm:px-4 text-2xl flex-auto font-medium !leading-[1] sm:text-5xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -43,18 +40,8 @@ export default function Intro({ intro1, intro2 }:{
           <span className="font-semibold text-right w-28 font-body flex justify-start">
             {intro2}{" "}
           </span>
-          
         </motion.h1>
-        <Image
-            src="/logo6.png"
-            alt="Ricardo portrait"
-            width={80}
-            height="2000"
-            quality="95"
-            priority={true}
-            className="mb-5 sm:mb-20 sm:mr-10 ml-20 visible sm:invisible"
-          />
-        </div>
+
 
         <motion.h1
           className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
@@ -76,7 +63,7 @@ export default function Intro({ intro1, intro2 }:{
           }}
         >
           <Link
-            href={"/"+ locale +"/events"}
+            href={"/" + locale + "/events"}
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
@@ -110,8 +97,10 @@ export default function Intro({ intro1, intro2 }:{
             </a>
           </div>
         </motion.div>
+
       </div>
-      <div className="flex flex-reverse -mr-8">
+
+      <div className="flex-col hidden sm:flex">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -127,11 +116,13 @@ export default function Intro({ intro1, intro2 }:{
             height="2000"
             quality="95"
             priority={true}
-            className="mb-0 sm:mb-20 sm:mr-10 z-10 invisible absolute sm:visible"
+            className="z-5"
           />
-          
+
         </motion.div>
+
       </div>
+
     </section>
   );
 }
