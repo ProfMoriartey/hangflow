@@ -13,7 +13,7 @@ import Features from "@/components/features";
 export default function Home() {
   const t = useTranslations("Index");
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center scroll-smooth">
       {/* {t("title")} */}
       <Intro intro1={t("intro1")} intro2={t("intro2")}/>
       <About aboutTitle={t("aboutTitle")} aboutDesc={t("aboutDesc")} aboutHeader={t("aboutHeader")} ReadMore={t("ReadMore")}/>

@@ -66,8 +66,8 @@ console.log(locale)
             <li ><Link href={'/' + locale}>{headerHome}</Link></li>
             <li ><Link href={'/' + locale + '/about'}>{headerAbout}</Link></li>
             <li ><Link href={'/' + locale + '/events'}>{headerEvents}</Link></li>
-            <li >{headerBoard}</li>
-            <li >{headerContact}</li>
+            <li ><Link href={'/' + locale }>{headerBoard}</Link></li>
+            <li ><Link href={'/' + locale }>{headerContact}</Link></li>
             <li>
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>{headerLanguage}</button>
@@ -103,7 +103,7 @@ console.log(locale)
                 <Link href={'/' + locale + '/about'}>{headerAbout}</Link>
                 <Link href={'/' + locale + '/events'}>{headerEvents}</Link>
                 <Link href={'/' + locale}>{headerBoard}</Link>
-                <Link href={'/' + locale}>{headerContact}</Link>
+                <Link href={'/' + locale }>{headerContact}</Link>
               </div>
             </div>
           </div>
