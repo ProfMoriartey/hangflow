@@ -29,18 +29,18 @@ console.log(locale)
     let newPathName = pathName;
     if(locale === 'fi' && lang === 'en'){
       newPathName = pathName.replace("/fi",'/en/')
-      console.log(pathName)
+      
     }
     if(locale === 'en' && lang === 'fi'){
       newPathName = pathName.replace("/en",'/fi/')
-      console.log(pathName)
+      
     }
     if(newPathName != pathName)
       router.push(newPathName);
   }
   
   return (
-    <header className="w-full h-24 sm:flex flex-row">
+    <header className="w-full h-24 sm:flex flex-row z-[999]">
       <motion.div
         className="fixed max-sm:hidden ml-20 md:inline md:top-3 md:left-20 z-[999]"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
@@ -57,7 +57,7 @@ console.log(locale)
         />
       </motion.div>
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:flex sm:flex-row sm:justify-center sm:items-center sm:h-[3.25rem] sm:w-[100vh] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:flex sm:flex-row sm:justify-center sm:items-center sm:h-[3.25rem] sm:w-[100vh] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 z-[999]"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >
@@ -92,8 +92,8 @@ console.log(locale)
             <div className={styles.dropdownMobile}>
               <button className={styles.dropbtnMobile}><BiWorld className="w-full h-full" /></button>
               <div className={styles.dropdownContentMobile}>
-                <button onClick={() => handleLanguage('en')}>EN</button>
-                <button onClick={() => handleLanguage('fi')}>FI</button>
+                <button className="w-full text-left" onClick={() => handleLanguage('en')}>EN</button>
+                <button className="w-full text-left" onClick={() => handleLanguage('fi')}>FI</button>
               </div>
             </div>
             <div className={styles.menu}>

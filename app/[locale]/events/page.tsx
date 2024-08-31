@@ -1,37 +1,68 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+export default function events() {
 
 
-export default function events (){
-    
-    
-return (
-    <div className="overflow-x-auto p-5">
-        <table className="min-w-full bg-transparent border opacity-15 dark:border-gray-200 border-black">
-            <thead>
-                <tr>
-                    <th className="py-2 px-4 border-b dark:border-gray-200 border-black text-left dark:text-white text-black">Date</th>
-                    <th className="py-2 px-4 border-b dark:border-gray-200 border-black text-left dark:text-white text-black">Event Name</th>
-                    <th className="py-2 px-4 border-b dark:border-gray-200 border-black text-left dark:text-white text-black">Participants</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">20-06-2024</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">Event 1</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">5</td>                    
-                </tr>
-                <tr>
-                <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">20-07-2024</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">Event 2</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">3</td>  
-                </tr>
-                <tr>
-                <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">20-08-2024</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">Event 3</td>
-                    <td className="py-2 px-4 border-b dark:border-gray-200 border-black dark:text-white text-black">5</td>  
-                </tr>
-            </tbody>
-        </table>
-    </div>
-)
+    return (
+        <div
+            className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6"
+        >
+            <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]">
+                <div className="h-48 overflow-hidden relative">
+                    <Image
+                        src="/group-pic1.png"
+                        alt="Hangflow Logo"
+                        fill
+                        objectFit="cover"
+                        quality="95"
+                        className="z-0"
+                        priority={true} />
+                </div>
+                <div className="px-6 py-4">
+                    <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
+                    <p className="text-gray-700 text-base">
+                        Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
+                    </p>
+                </div>
+            </div>
+            <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-1">
+                <div className="h-48 overflow-hidden relative">
+                    <Image
+                        src="/group-pic1.png"
+                        alt="Hangflow Logo"
+                        fill
+                        objectFit="cover"
+                        quality="95"
+                        priority={true} />
+                </div>
+                <div className="px-6 py-4">
+                    <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
+                    <p className="text-gray-700 text-base">
+                        Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
+                    </p>
+                </div>
+            </div>
+            <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-1">
+                <div className="h-48 overflow-hidden relative">
+                    <Image
+                        src="/group-pic1.png"
+                        alt="Hangflow Logo"
+                        fill
+                        objectFit="cover"
+                        quality="95"
+                        priority={true} />
+                </div>
+                <div className="px-6 py-4">
+                    <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
+                    <p className="text-gray-700 text-base">
+                        Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
 
 }
