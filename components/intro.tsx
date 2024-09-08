@@ -26,18 +26,18 @@ export default function Intro({ intro1, intro2 }: {
     <section
       ref={ref}
       id="home"
-      className="flex flex-row justify-center items-center w-full py-16"
+      className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28"
     >
-      <div className="flex flex-col w-1/3">
+      <div className="flex flex-col w-1/3 items-center">
         <motion.h1
           className="sm:px-4 text-2xl flex-auto font-medium !leading-[1] sm:text-5xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-semibold text-right w-28  font-body flex justify-start">
+          <span className="font-semibold text-right w-28 flex justify-start">
             {intro1}{" "}
           </span>
-          <span className="font-semibold text-right w-28 font-body flex justify-start">
+          <span className="font-semibold text-right w-28 flex justify-start">
             {intro2}{" "}
           </span>
         </motion.h1>
@@ -55,7 +55,7 @@ export default function Intro({ intro1, intro2 }: {
         </motion.h1>
 
         <motion.div
-          className="flex flex-col -ml-7 sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -99,30 +99,28 @@ export default function Intro({ intro1, intro2 }: {
         </motion.div>
 
       </div>
+      <motion.div
+        className="flex-col sm:flex w-1/3 justify-center items-center"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          type: "tween",
+          duration: 0.2,
+        }}
+      >
+        <Image
+          src="/logo6.png"
+          alt="Ricardo portrait"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '75%', height: 'auto', textAlign: 'center' }}
+          quality="95"
+          priority={true}
+          className="z-5"
+        />
 
-      <div className="flex-col hidden sm:flex">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            type: "tween",
-            duration: 0.2,
-          }}
-        >
-          <Image
-            src="/logo6.png"
-            alt="Ricardo portrait"
-            width={260}
-            height="2000"
-            quality="95"
-            priority={true}
-            className="z-5"
-          />
-
-        </motion.div>
-
-      </div>
-
+      </motion.div>
     </section>
   );
 }

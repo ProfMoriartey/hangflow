@@ -33,10 +33,10 @@ export default function BoardMembers() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-medium font-body flex justify-start">
+        <span className="font-medium flex justify-start">
           2024{" "}
         </span>
-        <span className="font-medium font-body flex justify-start">
+        <span className="font-medium flex justify-start">
           Board Members{" "}
         </span>
       </motion.h1>
