@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
-export default function events() {
+export default function Events() {
     const locale = useLocale();
     const router = useRouter();
 
