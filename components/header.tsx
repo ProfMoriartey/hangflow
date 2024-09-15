@@ -106,7 +106,7 @@ console.log(locale)
                 <Link href={'/' + locale + '/about'}>{headerAbout}</Link>
                 <Link href={'/' + locale + '/events'}>{headerEvents}</Link>
                 <Link href={'/' + locale}>{headerBoard}</Link>
-                <Link href={'/' + locale }>{headerContact}</Link>
+                <Link href={'/' + locale + '#contact'}>{headerContact}</Link>
               </div>
             </div>
           </div>
