@@ -36,10 +36,10 @@ export default function Member({ name, country, description }: MemberProps) {
             <p className="text-gray-700 dark:text-white/70 text-left text-xs">
               {country}
             </p>
-            <span>-------------------</span>
-            <p className="text-sm pb-2 text-justify leading-relaxed text-gray-700 dark:text-white/70">
+            {/* <span>-------------------</span> */}
+            {/* <p className="text-sm pb-2 text-justify leading-relaxed text-gray-700 dark:text-white/70">
               "{description}"
-            </p>
+            </p> */}
             <div className="m-3 ml-0"></div>
           </div>
         </section>

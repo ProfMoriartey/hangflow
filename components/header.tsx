@@ -47,7 +47,7 @@ console.log(locale)
         className="fixed max-sm:hidden ml-20 md:inline md:top-3 md:left-20 z-[999]"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-      >
+      ><Link href={'/' + locale}>
         <Image
           src="/logo.png"
           alt="Hangflow Logo"
@@ -57,6 +57,7 @@ console.log(locale)
           priority={true}
           className="mb-0 -mt-2"
         />
+      </Link> 
       </motion.div>
       <motion.div
         className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:flex sm:flex-row sm:justify-center sm:items-center sm:h-[3.25rem] sm:w-[100vh] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 z-[999]"
@@ -68,7 +69,7 @@ console.log(locale)
             <li ><Link href={'/' + locale}>{headerHome}</Link></li>
             <li ><Link href={'/' + locale + '/about'}>{headerAbout}</Link></li>
             <li ><Link href={'/' + locale + '/events'}>{headerEvents}</Link></li>
-            <li ><Link href={'/' + locale }>{headerBoard}</Link></li>
+            {/* <li ><Link href={'/' + locale }>{headerBoard}</Link></li> */}
             <li ><Link href={'/' + locale }>{headerContact}</Link></li>
             <li>
               <div className={styles.dropdown}>
