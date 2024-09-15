@@ -36,7 +36,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-medium font-body flex text-left justify-start">
+            <span className="font-medium flex text-left justify-start">
               {aboutHeader}{" "}
             </span>
             
