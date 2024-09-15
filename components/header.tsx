@@ -70,7 +70,7 @@ console.log(locale)
             <li ><Link href={'/' + locale + '/about'}>{headerAbout}</Link></li>
             <li ><Link href={'/' + locale + '/events'}>{headerEvents}</Link></li>
             {/* <li ><Link href={'/' + locale }>{headerBoard}</Link></li> */}
-            <li ><Link href={'/' + locale }>{headerContact}</Link></li>
+            <li ><Link href={'/' + locale + '#contact'}>{headerContact}</Link></li>
             <li>
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>{headerLanguage}</button>
