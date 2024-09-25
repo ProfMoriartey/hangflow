@@ -2,6 +2,7 @@
 
 import EventsAbout from "@/components/events-about";
 import EventsCheckout from "@/components/events-checkout";
+import EventsGrid from "@/components/events-grid";
 import EventsIntro from "@/components/events-intro";
 import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
@@ -22,13 +23,13 @@ export default function Events() {
             className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6"
         >
             <div className="flex flex-col items-center justify-center scroll-smooth">
-    
-      <EventsIntro/>
-      <EventsAbout/>
-      <EventsCheckout/>
-  
+                <EventsIntro/>
+                <EventsAbout/>
+                <EventsCheckout/>
+                <EventsGrid/>
             </div>
-            <div className="flex flex-row max-sm:flex-col w-full justify-center gap-5">
+
+            {/* <div className="flex flex-row max-sm:flex-col w-full justify-center gap-5">
                 <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
                     <div className="h-48 overflow-hidden relative">
                         <Image
@@ -83,7 +84,7 @@ export default function Events() {
                     </p>
                 </div>
             </div>
-            </div>
+            </div> */}
             
         </div>
     )

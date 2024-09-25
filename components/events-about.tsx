@@ -14,16 +14,16 @@ export default function EventsAbout({ }: {
   // aboutHeader: string,
   // ReadMore: string  aboutTitle, aboutDesc, aboutHeader, ReadMore 
 }) {
-  const { ref } = useSectionInView("About");
+ 
   const locale = useLocale();
   return (
     <motion.section
-      ref={ref}
+ 
       className="flex flex-col items-center justify-center py-16 w-full"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
+  
     >
       {/* <div className="w-full">
         <h2 className="text-3xl font-medium capitalize mb-8 text-center">{aboutTitle}</h2>
