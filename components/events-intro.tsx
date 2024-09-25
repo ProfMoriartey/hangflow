@@ -55,7 +55,7 @@ export default function EventsIntro({ }: {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="flex sm:-mb-6 justify-start">
-            Take a look at who we are, our journey and our goals{" "}
+            Take a look at who we are, our journey and our mission{" "}
           </span>
         </motion.h1>
 

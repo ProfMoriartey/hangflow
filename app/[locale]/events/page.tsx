@@ -1,5 +1,6 @@
 "use client";
 
+import EventsAbout from "@/components/events-about";
 import EventsIntro from "@/components/events-intro";
 import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
@@ -22,6 +23,7 @@ export default function Events() {
             <div className="flex flex-col items-center justify-center scroll-smooth">
     
       <EventsIntro/>
+      <EventsAbout></EventsAbout>
   
             </div>
             <div className="flex flex-row max-sm:flex-col w-full justify-center gap-5">
