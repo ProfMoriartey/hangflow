@@ -30,7 +30,7 @@ export default function Intro({ intro1, intro2 }: {
     >
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
-          className="sm:px-4 text-2xl flex-auto font-medium !leading-[1] sm:text-5xl flex flex-col"
+          className="sm:px-4 text-2xl flex-auto font-medium !leading-[1] sm:text-7xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -44,18 +44,18 @@ export default function Intro({ intro1, intro2 }: {
 
 
         <motion.h1
-          className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
+          className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:ml-72 sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="flex justify-start">
-            Check out our new events and all that we have{" "}
+            Check out our new events and all that we have done!{" "}
           </span>
-          <span className="flex justify-start">done! </span>
+          {/* <span className="flex justify-start">done! </span> */}
         </motion.h1>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col sm:flex-row items-center justify-center sm:ml-72 gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -113,11 +113,11 @@ export default function Intro({ intro1, intro2 }: {
           alt="Ricardo portrait"
           width={0}
           height={0}
-          sizes="100vw"
-          style={{ width: '75%', height: 'auto', textAlign: 'center' }}
+          sizes="90vw"
+          style={{ width: '65%', height: 'auto', textAlign: 'center' }}
           quality="95"
           priority={true}
-          className="z-5"
+          className="z-5 sm:-ml-32"
         />
 
       </motion.div>

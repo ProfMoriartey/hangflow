@@ -21,7 +21,7 @@ export default function BoardMembers() {
   return (
     <motion.section
       ref={ref}
-      className="w-full flex flex-col justify-center items-center"
+      className="w-full flex flex-col mt-24 justify-center items-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -29,7 +29,7 @@ export default function BoardMembers() {
     >
 
       <motion.h1
-        className="mb-5 mt-2 px-4 items-center text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col "
+        className="-mb-4 px-4 items-center text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

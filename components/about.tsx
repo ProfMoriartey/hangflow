@@ -25,9 +25,9 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="w-full">
+      {/* <div className="w-full">
         <h2 className="text-3xl font-medium capitalize mb-8 text-center">{aboutTitle}</h2>
-      </div>
+      </div> */}
       
       <div className="flex flex-row justify-center items-center w-3/5 max-sm:w-full">
         <div className="flex flex-col w-2/5 max-sm:hidden">
@@ -49,7 +49,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
           >
             <div className="-mx-4 w-52 -mb-20 sm:mb-0 invisible sm:visible"><Link
             href={'/' + locale + '/about'}
-            className=" group text-sm text-black border borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+            className=" group text-sm text-black border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
           
           >
             {ReadMore}
