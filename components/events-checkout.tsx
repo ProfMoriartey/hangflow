@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function EventsCheckout() {
   
@@ -31,9 +32,20 @@ export default function EventsCheckout() {
         </motion.h3>
       </SectionHeading>
       <div>
-      <a
+
+      <Link
+            href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
+            target="_blank"
+            className="group bg-opacity-20 text-8xl border border-black text-gray-900 dark:border-white dark:text-white  mr-2.5 p-4 flex justify-center items-center gap-4 rounded-md outline-none focus:scale-105 hover:scale-105 hover:bg-slate-50 dark:hover:bg-slate-600 active:scale-102 transition"
+            onClick={() => {
+            }}
+          >
+            EVENTS
+            
+          </Link>
+      {/* <a
           href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
-          className="group rounded-lg border border-transparent "
+          className="group  bg-slate-500 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -43,7 +55,7 @@ export default function EventsCheckout() {
           </h2>
        
         
-        </a>
+        </a> */}
       </div>
       
     </motion.section>

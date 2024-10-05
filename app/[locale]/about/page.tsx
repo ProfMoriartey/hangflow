@@ -1,10 +1,28 @@
+import AboutAbout from "@/components/about-about";
+import AboutGrid from "@/components/about-grid";
+import AboutIntro from "@/components/about-intro";
+import AboutQuestions from "@/components/about-questions";
 import Accordeon from "@/components/accordeon";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 export default function AboutUs() {
     const t = useTranslations("Index");
     return (
-        <div className="flex w-full flex-col items-center justify-center mb-5">
+        <div>
+
+        
+        <div
+            className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6"
+        >
+            <div className="flex flex-col items-center justify-center scroll-smooth">
+                <AboutIntro aboutIntro1={t("aboutIntro.aboutIntro1")} aboutIntro2={t("aboutIntro.aboutIntro2")}/>
+                <AboutAbout aboutTitle={t("aboutAbout.aboutTitle")} aboutDesc1={t("aboutAbout.aboutDesc1")} aboutDesc2={t("aboutAbout.aboutDesc2")} aboutDesc3={t("aboutAbout.aboutDesc3")} aboutDesc4={t("aboutAbout.aboutDesc4")} aboutDesc5={t("aboutAbout.aboutDesc5")} />
+                <AboutGrid/>
+                <AboutQuestions/>
+            </div>
+        </div>
+
+        {/* <div className="flex w-full flex-col items-center justify-center mb-5">
             <div className=" flex-col w-9/12">
                 <div className="flex lg:flex-row-reverse max-sm:flex-col w-full mb-14">
                     <div className="lg:w-6/12 max-sm:w-full flex flex-col pl-5 max-sm:mb-10">
@@ -44,6 +62,7 @@ export default function AboutUs() {
                 </div>
             </div>
             <Accordeon></Accordeon>
+        </div> */}
         </div>
     )
 }

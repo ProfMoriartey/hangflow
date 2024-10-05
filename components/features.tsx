@@ -9,6 +9,10 @@ import Image from "next/image";
 export default function Features() {
   
   return (
+    <div>
+    <div className="bg-[#fbe2e3] absolute top-[175rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b6d80]"></div>
+    <div className="bg-[#fbe2e3] absolute top-[175rem] -z-10 right-[70rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#639469]"></div>
+
     <motion.section
       className="flex flex-col items-center justify-center pb-16 w-full"
       initial={{ opacity: 0, y: 100 }}
@@ -38,5 +42,6 @@ export default function Features() {
         alt={"Group Picture"}
       />
     </motion.section>
+    </div>
   );
 }

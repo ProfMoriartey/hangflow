@@ -5,7 +5,7 @@
     "intro1": "Safer place for",
     "intro2": "everybody to join",
     "aboutTitle": "About us",
-    "aboutHeader": "What is HangFlow ry",
+    "aboutHeader": "What is HangFlow ry?",
     "aboutDesc": "HangFlow ry is a non-profit youth organization located in Turku, founded by the passion and drive of young activists in the summer of 2020. Our unwavering commitment revolves around championing the voices of the youth and propelling the cause of equity and equality. Our fundamental objective is to create a safe space for every young individual, built upon the guiding principle of by youth, for youth.",
     "ReadMore": "Read More!",
     "checkEvents": "Check our events out!",
@@ -18,6 +18,19 @@
     "aboutPage": {
       "ourStory": "Our Story",
       "ourMission": "Our Mission"
+    },
+    "aboutIntro": {
+      "aboutIntro1": "WE ARE HANGFLOW",
+      "aboutIntro2": ""
+    },
+    "aboutAbout": {
+      "aboutTitle": "What is HangFlow ry?",
+      "aboutDesc1": "HangFlow ry is a non-profit youth organization located in Turku, founded by the passion and drive of young activists in the summer of 2020. Our unwavering commitment revolves around championing the voices of the youth and propelling the cause of equity and equality. Our fundamental objective is to create a safe space for every young individual, built upon the guiding principle of 'by youth, for youth.'",
+      "aboutDesc2": "Our mission at HangFlow ry is to establish safe environments for young people, places where everyone can be their authentic selves and grow at their own pace and on their unique journey. We firmly believe that every young person deserves to be heard, respected, and cherished as an indispensable part of their community, irrespective of their background or identity.",
+      "aboutDesc3": "Our focus revolves around empowering young minds with vital life skills such as problem-solving and advocacy while underlining the paramount importance of equity and equality. We offer opportunities for intergenerational learning and development, striving relentlessly to ensure that each young person can express themselves without the specter of discrimination and equality. Our strength lies in collaboration, fostering an environment where the community thrives and evolves collectively.",
+      "aboutDesc4": "HangFlow ry operates through the unwavering dedication of devoted volunteer youth workers. Our aim is to thwart youth exclusion and champion the cause of equity and equality in society. We openly address head-on the most challenging topics and shatter societal taboos, providing support under the nurturing guidance of a trusted adult. Our efforts encompass a wide spectrum of contemporary issues, spanning violence, bullying, mental health, racism, and gender and sexual diversity. Our ultimate goal is to construct a community where every youth’s voice finds a receptive ear to be heard and to be understood.",
+      "aboutDesc5": "We invite you to engage in the vibrant activities hosted by HangFlow ry and join hands with us in advancing the cause of equity and equality, forging a brighter future for our youth and our community, and safeguarding every young person's right to embrace their true selves. Do not hesitate to reach out, partake in our events, and become an integral part of our empowering movement. Together, we can instigate the change we aspire to see."
+
     }
   }
 }

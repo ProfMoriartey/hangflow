@@ -13,9 +13,9 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
 
-export default function EventsIntro({ }: {
-  // intro1: string,
-  // intro2: string intro1, intro2 
+export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
+  aboutIntro1: string, 
+  aboutIntro2: string
 }) {
 
   const locale = useLocale();
@@ -35,32 +35,27 @@ export default function EventsIntro({ }: {
           animate={{ opacity: 1, y: 0 }}
         >
            <span className="font-bold text-right -ml-8 w-28 flex justify-start">
-            HANGFLOW
+           {aboutIntro1}{" "}
           </span>
           <span className="font-bold text-right w-28 flex justify-start">
-            EVENTS
+          {aboutIntro2}{" "}
           </span>
-          {/* <span className="font-semibold text-right w-28 flex justify-start">
-            {intro1}{" "}
-          </span>
-          <span className="font-semibold text-right w-28 flex justify-start">
-            {intro2}{" "}
-          </span> */}
         </motion.h1>
 
 
         <motion.h1
-          className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
+          className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:ml-72 sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="flex sm:-mb-6 justify-start">
-            Take a look at who we are, our journey and our mission{" "}
-          </span>
+          {/* <span className="flex justify-start">
+            Check out our new events and all that we have done!{" "}
+          </span> */}
+          {/* <span className="flex justify-start">done! </span> */}
         </motion.h1>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col sm:flex-row items-center justify-center sm:ml-72 gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -68,14 +63,15 @@ export default function EventsIntro({ }: {
           }}
         >
           <Link
-            href={"/" + locale + "/about"}
-            className="group bg-black text-white mr-2.5 px-8 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            href={"/" + locale + "/events"}
+            className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
-              setActiveSection("About");
+              setActiveSection("Events");
               setTimeOfLastClick(Date.now());
             }}
           >
-            About Us
+            EVENTS
+            
           </Link>
           <div className="flex gap-2">
             <a
@@ -113,15 +109,15 @@ export default function EventsIntro({ }: {
         }}
       >
         <Image
-          src="/events-intro.png"
+          src="/about-intro.png"
           alt="Ricardo portrait"
           width={0}
           height={0}
-          sizes="2500vw"
-          style={{ width: '100%',  textAlign: 'center' }}
+          sizes="90vw"
+          style={{ width: '100%', height: 'auto', textAlign: 'center' }}
           quality="95"
           priority={true}
-          className="z-5 sm:-ml-16"
+          className="z-5 sm:-ml-24 w-40"
         />
 
       </motion.div>
