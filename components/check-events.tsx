@@ -15,7 +15,7 @@ export default function CheckEvents({ checkEvents, ReadMore }: {
   const { ref } = useSectionInView("Events");
   const locale = useLocale();
   return (
-    <motion.section ref={ref} id="events" className="w-full py-16 flex justify-center items-center"
+    <motion.section ref={ref} id="events" className="w-full py-16 my-6 flex justify-center items-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}>
@@ -80,7 +80,7 @@ export default function CheckEvents({ checkEvents, ReadMore }: {
           <div className="mt-4 ml-4 w-52 sm:absolute sm:invisible static visible"> <Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
-            className="group text-black text-sm border-4 borderBlack mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 dark:border-white"
+            className="group text-black text-sm border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
           >
             {ReadMore}
           </Link>

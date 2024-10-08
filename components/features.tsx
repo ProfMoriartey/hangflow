@@ -11,10 +11,10 @@ export default function Features() {
   return (
     <div>
     <div className="bg-[#fbe2e3] absolute top-[175rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b6d80]"></div>
-    <div className="bg-[#fbe2e3] absolute top-[175rem] -z-10 right-[70rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#639469]"></div>
+    <div className="bg-[#fbe2e3] absolute top-[175rem] -z-10 right-[70rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b6d80]"></div>
 
     <motion.section
-      className="flex flex-col items-center justify-center pb-16 w-full"
+      className="flex flex-col items-center justify-center sm:my-16 pb-16 w-full"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -26,6 +26,7 @@ export default function Features() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
+          
           <span className="font-medium  flex justify-start">
             Check our{" "}
           </span>
@@ -34,7 +35,7 @@ export default function Features() {
           </span>
         </motion.h3>
       </SectionHeading>
-
+      <div className="bg-[#fbe2e3] absolute -z-10  h-[40rem] w-[20rem] rounded-full blur-[10rem] sm:w-[40rem] dark:bg-[#5a61f2]"></div>
       <Image
         src={"/features-en.png"}
         width={1000}

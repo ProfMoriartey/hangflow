@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function AboutUs() {
     const t = useTranslations("Index");
     return (
-        <div>
+        <div className="sm:scroll-m-28">
 
         
         <div

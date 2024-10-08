@@ -21,7 +21,7 @@ export default function BoardMembers() {
   return (
     <motion.section
       ref={ref}
-      className="w-full flex flex-col mt-24 justify-center items-center"
+      className="w-full flex flex-col mt-24 justify-center items-center sm:mb-10"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

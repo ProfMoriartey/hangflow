@@ -12,6 +12,7 @@ import { BsInstagram } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
+import { SiBento } from "react-icons/si";
 
 export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
   aboutIntro1: string, 
@@ -74,13 +75,14 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
             
           </Link>
           <div className="flex gap-2">
-            <a
+          <a
               className=" p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-solid border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
+              href="https://bento.me/hangflow"
               target="_blank"
             >
-              <BsLinkedin />
+              <SiBento/>
             </a>
+            
             <a
               className="p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
               href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="

@@ -12,6 +12,7 @@ import { BsInstagram } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
+import { SiBento } from "react-icons/si";
 
 export default function Intro({ intro1, intro2 }: {
   intro1: string,
@@ -26,7 +27,7 @@ export default function Intro({ intro1, intro2 }: {
     <section
       ref={ref}
       id="home"
-      className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28"
+      className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28 sm:scroll-m-28"
     >
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
@@ -63,7 +64,8 @@ export default function Intro({ intro1, intro2 }: {
           }}
         >
           <Link
-            href={"/" + locale + "/events"}
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
@@ -76,10 +78,10 @@ export default function Intro({ intro1, intro2 }: {
           <div className="flex gap-2">
             <a
               className=" p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-solid border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"
-              href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA=="
+              href="https://bento.me/hangflow"
               target="_blank"
             >
-              <BsLinkedin />
+              <SiBento/>
             </a>
             <a
               className="p-4 text-black hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-2 border-black dark:border-transparent dark:bg-white/10 dark:text-white/60"

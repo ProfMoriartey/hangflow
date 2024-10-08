@@ -20,7 +20,7 @@ export default function Events() {
 
     return (
         <div
-            className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6"
+            className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6 sm:scroll-m-28"
         >
             <div className="flex flex-col items-center justify-center scroll-smooth">
                 <EventsIntro/>
