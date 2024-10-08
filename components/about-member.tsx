@@ -8,7 +8,7 @@ import React, { useRef } from "react";
 
 type ReviewProps = (typeof memberData)[number];
 
-export default function AboutMember({ name, country, description }: ReviewProps) {
+export default function AboutMember({ name, position, image }: ReviewProps) { 
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -38,12 +38,12 @@ export default function AboutMember({ name, country, description }: ReviewProps)
                 <div className="sm:ml-5 sm:mt-2">
                     <h3 className="text-sm font-semibold text-left">{name}</h3>
                     <p className="text-gray-700 dark:text-white/70 text-left text-xs">
-                      {country}
+                      {position}
                     </p>
                 </div>
                 <span>-------------------</span>
                 <p className="text-sm pb-2 text-justify leading-relaxed text-gray-700 dark:text-white/70">
-                  "{description}"
+                  "{image}"
                 </p>
                 <div className="m-3 ml-0"></div>
           </div>
