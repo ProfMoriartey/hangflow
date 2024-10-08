@@ -48,9 +48,9 @@ export default function Intro({ intro1, intro2 }: {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="flex justify-start">
+          {/* <span className="flex justify-start">
             Check out our new events and all that we have done!{" "}
-          </span>
+          </span> */}
           {/* <span className="flex justify-start">done! </span> */}
         </motion.h1>
 
