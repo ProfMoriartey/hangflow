@@ -91,52 +91,53 @@ export const qualificationsData = [
 
 export const memberData = [
   {
-    name: "Lindsey",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
+    name: "Helmi",
+    position: "Deputy member",
+    image:
+      "/helmi.png",
   },
   {
-    name: "Lyn",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
+    name: "Shahin",
+    position: "Vice President",
+    image:
+      "/shahin.png",
   },
   {
-    name: "Jordan",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
+    name: "Nora",
+    position: "Secretary",
+    image:
+      "/nora.png",
+  },
+  {
+    name: "Hannaneh",
+    position: "President",
+    image:
+      "/hannaneh.png",
+  },
+  {
+    name: "Dandy",
+    position: "Deputy member",
+    image:
+      "/dandy.png",
+  },
+  {
+    name: "Vilma",
+    position: "Deputy member",
+    image:
+      "/vilma.png",
+  },
+  
+  {
+    name: "Starr",
+    position: "Finland",
+    image:
+      "/hannaneh.png",
   },
   {
     name: "Starr",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
-  },
-  {
-    name: "Starr",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
-  },
-  {
-    name: "Starr",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
-  },
-  {
-    name: "Starr",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
-  },
-  {
-    name: "Starr",
-    country: "Finland",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar",
+    position: "Finland",
+    image:
+      "/hannaneh.png",
   }
 ] as const;
 

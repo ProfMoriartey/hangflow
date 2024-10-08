@@ -8,7 +8,7 @@ import Image from "next/image";
 
 type MemberProps = (typeof memberData)[number];
 
-export default function Member({ name, country, description }: MemberProps) {
+export default function Member({ name, position, image }: MemberProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -28,23 +28,23 @@ export default function Member({ name, country, description }: MemberProps) {
         className="group mb-3 sm:mb-8 last:mb-0"
       >
         <section className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative mt-28 sm:h-[15rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 flex flex-col sm:flex-row sm:group-even:ml-[18rem]">
+          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 flex flex-row sm:group-even:ml-[18rem]">
             
             <Image
-            src="/logo6.png"
+            src={image}
             alt="Ricardo portrait"
             width={0}
             height={0}
             sizes="80vw"
-            style={{ width: '35%', height: 'auto', textAlign: 'center' }}
+            style={{ width: '50%', height: 'auto', textAlign: 'center' }}
             quality="95"
             priority={true}
             className="z-5 "/>
           
-            <div className="sm:ml-16 sm:mt-2">
-              <h3 className="text-xl font-semibold text-left">{name}</h3>
-              <p className="text-gray-700 dark:text-white/70 text-left text-md">
-                {country}
+            <div className="sm:ml-8 sm:mt-2">
+              <h3 className="text-xs sm:text-xl font-semibold text-left">{name}</h3>
+              <p className="text-gray-700 dark:text-white/70 text-left text-xs sm:text-md">
+                {position}
               </p>
               </div>
               {/* <span>-------------------</span> */}
