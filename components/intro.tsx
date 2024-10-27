@@ -111,7 +111,7 @@ export default function Intro({ intro1, intro2 }: {
         }}
       >
         <Image
-          src="/logo6.png"
+          src="/main_intro.png"
           alt="Ricardo portrait"
           width={0}
           height={0}

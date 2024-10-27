@@ -49,7 +49,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
           >
             <div className="-mx-4 w-52 -mb-20 sm:mb-0 invisible sm:visible"><Link
             href={'/' + locale + '/about'}
-            className=" group text-sm text-black border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
+            className=" group text-sm text-black border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:border-gray-50 dark:text-gray-50 dark:text-opacity-90"
           
           >
             {ReadMore}

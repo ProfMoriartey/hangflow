@@ -60,9 +60,6 @@ export default function AboutGrid() {
             
         <div className="max-w-md rounded-xl overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/hannaneh.png"
                             alt="Hangflow Logo"
@@ -71,7 +68,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0 "
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Hannaneh</div>
@@ -82,9 +78,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/shahin.png"
                             alt="Hangflow Logo"
@@ -93,7 +86,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0 "
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Shahin</div>
@@ -104,9 +96,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/nora.png"
                             alt="Hangflow Logo"
@@ -115,7 +104,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Nora</div>
@@ -126,9 +114,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/taru.png"
                             alt="Hangflow Logo"
@@ -137,7 +122,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Taru</div>
@@ -148,9 +132,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/victoria.png"
                             alt="Hangflow Logo"
@@ -159,7 +140,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Victoria</div>
@@ -170,9 +150,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/saara.png"
                             alt="Hangflow Logo"
@@ -181,7 +158,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Saara</div>
@@ -192,9 +168,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/dandy.png"
                             alt="Hangflow Logo"
@@ -203,7 +176,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Dandy</div>
@@ -214,9 +186,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/helmi.png"
                             alt="Hangflow Logo"
@@ -225,7 +194,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Helmi</div>
@@ -236,9 +204,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/vilma.png"
                             alt="Hangflow Logo"
@@ -247,7 +212,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Vilma</div>
@@ -258,9 +222,6 @@ export default function AboutGrid() {
                 </div>
                 <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
                         <Image
                             src="/dung.png"
                             alt="Hangflow Logo"
@@ -269,7 +230,6 @@ export default function AboutGrid() {
                             quality="95"
                             className="z-0"
                             priority={true} />
-                        </a>
                     </div>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">Dung</div>

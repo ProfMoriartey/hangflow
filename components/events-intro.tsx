@@ -77,7 +77,7 @@ export default function EventsIntro({ }: {
               setTimeOfLastClick(Date.now());
             }}
           >
-            Events
+            EVENTS
           </Link>
           <div className="flex gap-2">
           <a

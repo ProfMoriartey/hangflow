@@ -39,11 +39,11 @@ export default function Member({ name, position, image }: MemberProps) {
             style={{ width: '50%', height: 'auto', textAlign: 'center' }}
             quality="95"
             priority={true}
-            className="z-5 "/>
+            className="z-5 border rounded-xl "/>
           
             <div className="sm:ml-8 sm:mt-2">
               <h3 className="text-xs sm:text-xl font-semibold text-left">{name}</h3>
-              <p className="text-gray-700 dark:text-white/70 text-left text-xs sm:text-md">
+              <p className="text-gray-700 dark:text-white/70 text-left text-xs sm:text-lg">
                 {position}
               </p>
               </div>

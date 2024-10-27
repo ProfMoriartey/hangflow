@@ -31,7 +31,7 @@ export default function Features() {
             Check our{" "}
           </span>
           <span className="font-medium  flex justify-start">
-            Main Features!{" "}
+            Main Values!{" "}
           </span>
         </motion.h3>
       </SectionHeading>

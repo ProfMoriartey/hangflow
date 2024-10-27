@@ -91,10 +91,10 @@ export const qualificationsData = [
 
 export const memberData = [
   {
-    name: "Helmi",
-    position: "Deputy member",
+    name: "Hannaneh",
+    position: "President",
     image:
-      "/helmi.png",
+      "/hannaneh.png",
   },
   {
     name: "Shahin",
@@ -109,11 +109,24 @@ export const memberData = [
       "/nora.png",
   },
   {
-    name: "Hannaneh",
-    position: "President",
+    name: "Taru",
+    position: "Treasurer",
     image:
-      "/hannaneh.png",
+      "/taru.png",
   },
+  {
+    name: "Victoria",
+    position: "Deputy member",
+    image:
+      "/victoria.png",
+  },
+  {
+    name: "Saara",
+    position: "Deputy member",
+    image:
+      "/saara.png",
+  },
+  
   {
     name: "Dandy",
     position: "Deputy member",
@@ -121,23 +134,22 @@ export const memberData = [
       "/dandy.png",
   },
   {
+    name: "Helmi",
+    position: "Deputy member",
+    image:
+      "/helmi.png",
+  },
+  {
     name: "Vilma",
     position: "Deputy member",
     image:
       "/vilma.png",
   },
-  
   {
-    name: "Starr",
-    position: "Finland",
+    name: "Dung",
+    position: "Deputy member",
     image:
-      "/hannaneh.png",
-  },
-  {
-    name: "Starr",
-    position: "Finland",
-    image:
-      "/hannaneh.png",
+      "/dung.png",
   }
 ] as const;
 
