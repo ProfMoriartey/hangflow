@@ -31,9 +31,9 @@ export default function AboutGrid() {
    
     >
     <div className="flex flex-col justify-center w-3/5 max-sm:w-full">
-        <div className="flex flex-col mb-8 sm:mb-0 left-0 w-3/5 ">
+        <div className="flex flex-col mb-2 sm:mb-0 left-0 w-3/5 ">
             <motion.h3
-                className="-mb-4 sm:mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-4xl flex flex-col "
+                className="-mb-4 sm:mb-2 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-4xl flex flex-col "
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
@@ -57,13 +57,58 @@ export default function AboutGrid() {
          </section> */}
 
         <div className="grid grid-cols-2 mt-10 sm:grid-cols-4 gap-4">
-            <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            
+        <div className="max-w-md rounded-xl overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/hannaneh.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0 "
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Hannaneh</div>
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        President
+                        </p>
+                    </div>
+                </div>
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/shahin.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0 "
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Shahin</div>
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Vice President
+                        </p>
+                    </div>
+                </div>
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/nora.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -73,22 +118,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Nora</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Secretary
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/taru.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -98,22 +140,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Taru</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Treasurer
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/victoria.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -123,22 +162,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Victoria</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/saara.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -148,22 +184,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Saara</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/dandy.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -173,22 +206,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Dandy</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/helmi.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -198,22 +228,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Helmi</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/vilma.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -223,22 +250,19 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Vilma</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/dung.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -248,116 +272,12 @@ export default function AboutGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Dung</div>
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Deputy member
                         </p>
                     </div>
                 </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                    <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                        </a>
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
-                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
-                        </p>
-                    </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                    <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                        </a>
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
-                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
-                        </p>
-                    </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                    <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                        </a>
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
-                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
-                        </p>
-                    </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                    <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                        </a>
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
-                            General Manager
-                        </p>
-                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
-                        </p>
-                    </div>
-                </div>
-                
         </div>
     
     </div>

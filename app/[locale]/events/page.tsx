@@ -25,7 +25,7 @@ export default function Events() {
             <div className="flex flex-col items-center justify-center scroll-smooth">
                 <EventsIntro/>
                 <EventsAbout/>
-                <EventsCheckout/>
+                {/* <EventsCheckout/> */}
                 <EventsGrid/>
             </div>
 

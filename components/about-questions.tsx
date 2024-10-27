@@ -25,7 +25,7 @@ export default function AboutQuestions() {
   return (
     <motion.section
      
-      className="w-full flex flex-col justify-center items-center"
+      className="w-full mt-10 flex flex-col justify-center items-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

@@ -1,4 +1,5 @@
 import AboutAbout from "@/components/about-about";
+import AboutApply from "@/components/about-apply";
 import AboutGrid from "@/components/about-grid";
 import AboutIntro from "@/components/about-intro";
 import AboutQuestions from "@/components/about-questions";
@@ -19,6 +20,7 @@ export default function AboutUs() {
                 <AboutAbout aboutTitle={t("aboutAbout.aboutTitle")} aboutDesc1={t("aboutAbout.aboutDesc1")} aboutDesc2={t("aboutAbout.aboutDesc2")} aboutDesc3={t("aboutAbout.aboutDesc3")} aboutDesc4={t("aboutAbout.aboutDesc4")} aboutDesc5={t("aboutAbout.aboutDesc5")} />
                 <AboutGrid/>
                 <AboutQuestions/>
+                <AboutApply/>
             </div>
         </div>
 

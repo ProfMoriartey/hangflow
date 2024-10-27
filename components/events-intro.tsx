@@ -50,7 +50,7 @@ export default function EventsIntro({ }: {
         </motion.h1>
 
 
-        <motion.h1
+        {/* <motion.h1
           className="mb-10 mt-4 sm:px-4 text-xs font-medium !leading-[1.5] sm:text-sm flex flex-col justify-start invisible absolute sm:static sm:visible"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,10 +58,10 @@ export default function EventsIntro({ }: {
           <span className="flex sm:-mb-6 justify-start">
             Take a look at who we are, our journey and our mission{" "}
           </span>
-        </motion.h1>
+        </motion.h1> */}
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col sm:flex-row items-center mt-2 justify-center gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -69,14 +69,15 @@ export default function EventsIntro({ }: {
           }}
         >
           <Link
-            href={"/" + locale + "/about"}
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
             className="group bg-black text-white mr-2.5 px-8 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("About");
               setTimeOfLastClick(Date.now());
             }}
           >
-            About Us
+            Events
           </Link>
           <div className="flex gap-2">
           <a
@@ -114,12 +115,12 @@ export default function EventsIntro({ }: {
         }}
       >
         <Image
-          src="/events-intro.png"
+          src="/events_try2.png"
           alt="Ricardo portrait"
           width={0}
           height={0}
           sizes="2500vw"
-          style={{ width: '100%',  textAlign: 'center' }}
+          style={{ width: '90%',  textAlign: 'center' }}
           quality="95"
           priority={true}
           className="z-5 sm:-ml-16"

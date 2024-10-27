@@ -64,7 +64,8 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
           }}
         >
           <Link
-            href={"/" + locale + "/events"}
+            href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
+            target="_blank"
             className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
@@ -111,12 +112,12 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
         }}
       >
         <Image
-          src="/about-intro.png"
+          src="/about_intro.png"
           alt="Ricardo portrait"
           width={0}
           height={0}
           sizes="90vw"
-          style={{ width: '100%', height: 'auto', textAlign: 'center' }}
+          style={{ width: '80%', height: 'auto', textAlign: 'center' }}
           quality="95"
           priority={true}
           className="z-5 sm:-ml-24 w-40"

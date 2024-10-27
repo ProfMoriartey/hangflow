@@ -35,7 +35,7 @@ export default function EventsGrid() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-extrabold flex text-left justify-start">
+        <span className="font-extrabold flex text-left mb-5 justify-start">
         OUR PROJECTS{" "}
         </span>
         
@@ -44,162 +44,14 @@ export default function EventsGrid() {
       
     </div>
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-  <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]">
-                    <div className="h-48 overflow-hidden relative">
-                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
-                            rel="noopener noreferrer">
-                            
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                        </a>
-                    </div>
-                    {/* <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div> */}
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('2')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    {/* <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div> */}
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    {/* <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div> */}
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    {/* <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div> */}
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div>
-                </div>
-                     
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('1')}>
-                    <div className="h-48 overflow-hidden relative">
-                        <Image
-                            src="/group-pic1.png"
-                            alt="Hangflow Logo"
-                            fill
-                            objectFit="cover"
-                            quality="95"
-                            className="z-0"
-                            priority={true} />
-                    </div>
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
-                        <p className="text-gray-700 text-base">
-                            Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
-                        </p>
-                    </div>
-                </div>
+                
                 <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/coming_event.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -209,22 +61,21 @@ export default function EventsGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
                             General Manager
-                        </p>
+                        </p> */}
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Read More
                         </p>
                     </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/coming_event.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -234,22 +85,21 @@ export default function EventsGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
                             General Manager
-                        </p>
+                        </p> */}
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Read More
                         </p>
                     </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/coming_event.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -259,22 +109,21 @@ export default function EventsGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
                             General Manager
-                        </p>
+                        </p> */}
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Read More
                         </p>
                     </div>
-                </div>
-                <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="h-48 overflow-hidden relative">
                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
                             rel="noopener noreferrer">
                             
                         <Image
-                            src="/group-pic1.png"
+                            src="/coming_event.png"
                             alt="Hangflow Logo"
                             fill
                             objectFit="cover"
@@ -284,12 +133,204 @@ export default function EventsGrid() {
                         </a>
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
-                        <p className="text-xs my-1">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
                             General Manager
-                        </p>
+                        </p> */}
                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                        General Manager
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
+                        </p>
+                    </div>
+                </div><div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                    <div className="h-48 overflow-hidden relative">
+                        <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+                            rel="noopener noreferrer">
+                            
+                        <Image
+                            src="/coming_event.png"
+                            alt="Hangflow Logo"
+                            fill
+                            objectFit="cover"
+                            quality="95"
+                            className="z-0"
+                            priority={true} />
+                        </a>
+                    </div>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl text-gray-700 dark:text-white/70">Coming Soon...</div>
+                        {/* <p className="text-xs my-1">
+                            General Manager
+                        </p> */}
+                        <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                        Read More
                         </p>
                     </div>
                 </div>
@@ -303,3 +344,70 @@ export default function EventsGrid() {
     </motion.section>
   );
 }
+
+
+// <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]">
+//                     <div className="h-48 overflow-hidden relative">
+//                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+//                             rel="noopener noreferrer">
+                            
+//                         <Image
+//                             src="/coming_event.png"
+//                             alt="Hangflow Logo"
+//                             fill
+//                             objectFit="cover"
+//                             quality="95"
+//                             className="z-0"
+//                             priority={true} />
+//                         </a>
+//                     </div>
+//                     {/* <div className="px-6 py-4">
+//                         <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
+//                         <p className="text-gray-700 text-base">
+//                             Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
+//                         </p>
+//                     </div> */}
+//                 </div>
+//                 <div className="max-w-md rounded overflow-hidden shadow-lg bg-white z-[0]" onClick={() => goToDetailEvents('2')}>
+//                     <div className="h-48 overflow-hidden relative">
+//                         <Image
+//                             src="/group-pic1.png"
+//                             alt="Hangflow Logo"
+//                             fill
+//                             objectFit="cover"
+//                             quality="95"
+//                             className="z-0"
+//                             priority={true} />
+//                     </div>
+//                     {/* <div className="px-6 py-4">
+//                         <div className="font-bold text-xl mb-2 text-black">Nombre del evento</div>
+//                         <p className="text-gray-700 text-base">
+//                             Esta es una breve descripción del evento. Aquí puedes añadir algunos detalles o información relevante.
+//                         </p>
+//                     </div> */}
+//                 </div>
+//                 <div className="max-w-md rounded overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+//                     <div className="h-48 overflow-hidden relative">
+//                         <a href="https://www.instagram.com/hangfloww?igsh=MWNoajYwdDc4am9tZA==" target="_blank"
+//                             rel="noopener noreferrer">
+                            
+//                         <Image
+//                             src="/group-pic1.png"
+//                             alt="Hangflow Logo"
+//                             fill
+//                             objectFit="cover"
+//                             quality="95"
+//                             className="z-0"
+//                             priority={true} />
+//                         </a>
+//                     </div>
+//                     <div className="px-6 py-4">
+//                         <div className="font-bold text-xl text-gray-700 dark:text-white/70">John</div>
+//                         <p className="text-xs my-1">
+//                             General Manager
+//                         </p>
+//                         <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+//                         General Manager
+//                         </p>
+//                     </div>
+//                 </div>
