@@ -19,9 +19,11 @@ export default function CheckEvents({ checkEvents, ReadMore }: {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}>
+       
       <SectionHeading> </SectionHeading>
       <div className="flex flex-row mb-16">
         <div className="absolute invisible sm:static sm:visible ">
+        <div className="bg-[#dbd7fb] absolute -z-10 h-[42rem] w-[50rem] rounded-full blur-[10rem] sm:w-[75.75rem] dark:bg-[#946387]"></div>
           <Image
             src="/group-pic1.png"
             width={800}
@@ -29,9 +31,11 @@ export default function CheckEvents({ checkEvents, ReadMore }: {
             alt={"Group Image"}
             className="rounded-lg -ml-16"
           />
+          
         </div>
         <div>
           <div>
+            
             <motion.h1
               className="mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col"
               initial={{ opacity: 0, y: 100 }}

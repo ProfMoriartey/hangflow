@@ -33,6 +33,8 @@ export default function BoardMembers() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
+         <div className="bg-[#fbe2e3] absolute -z-10 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b6d80]"></div>
+
         <span className="font-medium flex justify-start">
           2024{" "}
         </span>
@@ -45,6 +47,7 @@ export default function BoardMembers() {
     <motion.div className="w-4/5"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
+          
     <Carousel>
         <CarouselContent>
           {memberData.map((member, index) => (

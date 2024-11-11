@@ -29,12 +29,14 @@ export default function Intro({ intro1, intro2 }: {
       id="home"
       className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28 sm:scroll-m-28"
     >
+     <div className="bg-[#dbd7fb] absolute -z-10 h-[50rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#676394]"></div> 
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
           className="sm:px-4 text-2xl flex-auto font-medium !leading-[1] sm:text-7xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
+          
           <span className="font-semibold text-right w-28 flex justify-start">
             {intro1}{" "}
           </span>
