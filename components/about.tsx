@@ -8,10 +8,11 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore, aboutBtn1, aboutBtn2, aboutBtn3 }: {
+export default function About({ aboutTitle, aboutDesc, aboutHeader1, aboutHeader2, ReadMore, aboutBtn1, aboutBtn2, aboutBtn3 }: {
   aboutTitle: string,
   aboutDesc: string,
-  aboutHeader: string,
+  aboutHeader1: string,
+  aboutHeader2: string,
   ReadMore: string,
   aboutBtn1: string,
   aboutBtn2: string,
@@ -40,7 +41,10 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore, ab
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="font-medium flex text-left justify-start">
-              {aboutHeader}{" "}
+              {aboutHeader1}{" "}
+            </span>
+            <span className="font-medium flex text-left justify-start">
+              {aboutHeader2}{" "}
             </span>
             
           </motion.h3>
@@ -63,7 +67,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore, ab
           </motion.h3>
         </div>
 
-        <p className="basis-1/2 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
+        <p className="basis-1/2 md:basis-3/5 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
           {aboutDesc}
         </p>
 
