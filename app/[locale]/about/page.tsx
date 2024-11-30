@@ -18,8 +18,8 @@ export default function AboutUs() {
             <div className="flex flex-col items-center justify-center scroll-smooth">
                 <AboutIntro aboutIntro1={t("aboutIntro.aboutIntro1")} aboutIntro2={t("aboutIntro.aboutIntro2")} events={t("aboutIntro.events")} />
                 <AboutAbout aboutTitle={t("aboutAbout.aboutTitle")} aboutDesc1={t("aboutAbout.aboutDesc1")} aboutDesc2={t("aboutAbout.aboutDesc2")} aboutDesc3={t("aboutAbout.aboutDesc3")} aboutDesc4={t("aboutAbout.aboutDesc4")} aboutDesc5={t("aboutAbout.aboutDesc5")} aboutDesc6={t("aboutAbout.aboutDesc6")} aboutDesc7={t("aboutAbout.aboutDesc7")}/>
-                <AboutGrid/>
-                <AboutQuestions/>
+                <AboutGrid boardTitle1={t("boardTitle1")} boardTitle2={t("boardTitle2")} />
+                {/* <AboutQuestions/> */}
                 <AboutApply line1={t("aboutApply.line1")} line2={t("aboutApply.line2")} apply={t("aboutPage.apply")}/>
             </div>
         </div>

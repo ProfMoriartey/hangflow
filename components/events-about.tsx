@@ -46,7 +46,7 @@ export default function EventsAbout({ eventTitle, eventsDesc1, eventsDesc2, even
           
         </div>
 
-        <p className="basis-1/2 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-5 text-sm text-left">
+        <p className="basis-1/2 flex flex-col gap-4  mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
         <div>{eventsDesc1}{""}</div>
         <div>{eventsDesc2}{""}</div>
         <div>{eventsDesc3}{""}</div>

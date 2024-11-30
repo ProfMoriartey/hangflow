@@ -27,7 +27,7 @@ export default function Features({valuesTitle1, valuesTitle2 }: {
     >
       <SectionHeading>
         <motion.h3
-          className="mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col items-center"
+          className="mb-5 mt-2 sm:mt-10 sm:mb-20 px-4 text-2xl font-medium !leading-[1] sm:text-3xl flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >

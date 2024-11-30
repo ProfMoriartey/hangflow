@@ -13,7 +13,10 @@ import router from "next/router";
 
 import AboutMember from "./about-member";
 
-export default function AboutGrid() {
+export default function AboutGrid({ boardTitle1, boardTitle2 }: {
+    boardTitle1: string,
+    boardTitle2: string
+  }) {
     const locale = useLocale();
     const router = useRouter();
 
@@ -38,7 +41,10 @@ export default function AboutGrid() {
                 animate={{ opacity: 1, y: 0 }}
             >
                 <span className="font-extrabold flex text-left justify-start">
-                Board Members{" "}
+                {boardTitle1}{" "}
+                </span>
+                <span className="font-extrabold flex text-left justify-start">
+                {boardTitle2}{" "}
                 </span>
             
             </motion.h3>
