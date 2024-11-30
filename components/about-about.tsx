@@ -8,15 +8,15 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-export default function AboutAbout({ aboutTitle, aboutDesc1, aboutDesc2, aboutDesc3, aboutDesc4, aboutDesc5 }: {
+export default function AboutAbout({ aboutTitle, aboutDesc1, aboutDesc2, aboutDesc3, aboutDesc4, aboutDesc5, aboutDesc6, aboutDesc7 }: {
   aboutTitle: string,
   aboutDesc1: string,
   aboutDesc2: string,
   aboutDesc3: string,
   aboutDesc4: string, 
   aboutDesc5: string,
-
-  
+  aboutDesc6: string,
+  aboutDesc7: string
 }) {
  
   const locale = useLocale();
@@ -55,6 +55,8 @@ export default function AboutAbout({ aboutTitle, aboutDesc1, aboutDesc2, aboutDe
         <div>{aboutDesc3}{""}</div>
         <div>{aboutDesc4}{""}</div>
         <div>{aboutDesc5}{""}</div>
+        <div>{aboutDesc6}{""}</div>
+        <div>{aboutDesc7}{""}</div>
         </p>
 
       </div>

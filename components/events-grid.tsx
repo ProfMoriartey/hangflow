@@ -11,7 +11,11 @@ import Member from "./member";
 import { useLocale } from "next-intl";
 import router from "next/router";
 
-export default function EventsGrid() {
+
+export default function EventsGrid({eventsProjects }: {
+    eventsProjects: string,
+   
+  }) {
     const locale = useLocale();
     const router = useRouter();
 
@@ -36,7 +40,7 @@ export default function EventsGrid() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-extrabold flex text-left mb-5 justify-start">
-        OUR PROJECTS{" "}
+        {eventsProjects}{" "}
         </span>
         
       </motion.h3>

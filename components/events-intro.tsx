@@ -14,9 +14,10 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
 import { SiBento } from "react-icons/si";
 
-export default function EventsIntro({ }: {
-  // intro1: string,
-  // intro2: string intro1, intro2 
+export default function EventsIntro({ eventsIntro, events }: {
+  eventsIntro: string,
+  events: string
+
 }) {
 
   const locale = useLocale();
@@ -31,16 +32,14 @@ export default function EventsIntro({ }: {
     >
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
-          className="sm:px-4 text-4xl m-3 -ml-5 sm:-ml-80 flex-auto font-medium !leading-[1] sm:text-9xl flex flex-col"
+          className="sm:px-4 text-4xl m-3 -ml-5 sm:-ml-80 flex-auto font-medium !leading-[1] sm:text-8xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-           <span className="font-bold text-right -ml-8 w-28 flex justify-start">
-            HANGFLOW
+           <span className="font-bold text-left ms:-ml-20 -ml-8 w-28 flex justify-start">
+            {eventsIntro}
           </span>
-          <span className="font-bold text-right w-28 flex justify-start">
-            EVENTS
-          </span>
+          
           {/* <span className="font-semibold text-right w-28 flex justify-start">
             {intro1}{" "}
           </span>
@@ -77,7 +76,7 @@ export default function EventsIntro({ }: {
               setTimeOfLastClick(Date.now());
             }}
           >
-            EVENTS
+            {events}
           </Link>
           <div className="flex gap-2">
           <a
@@ -123,7 +122,7 @@ export default function EventsIntro({ }: {
           style={{ width: '90%',  textAlign: 'center' }}
           quality="95"
           priority={true}
-          className="z-5 sm:-ml-16"
+          className="z-5 "
         />
 
       </motion.div>

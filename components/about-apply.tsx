@@ -8,11 +8,11 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-export default function AboutApply({ }: {
-  // aboutTitle: string,
-  // aboutDesc: string,
-  // aboutHeader: string,
-  // ReadMore: string  aboutTitle, aboutDesc, aboutHeader, ReadMore 
+export default function AboutApply({ line1, line2, apply}: {
+  line1: string,
+  line2: string,
+  apply: string,
+
 }) {
  
   const locale = useLocale();
@@ -30,35 +30,33 @@ export default function AboutApply({ }: {
       </div> */}
       
       <div className="flex flex-row justify-center mb-14 w-3/5 max-sm:w-full">
-        <div className="flex flex-col mb-8 sm:mb-0 left-0 w-2/5 ">
+        <div className="flex flex-col mb-8 sm:mb-0 left-0 w-3/7 ">
           <motion.h3
             className="-mb-4 sm:mb-5 mt-2 px-4 text-2xl font-medium !leading-[1] sm:mr-3 sm:text-xl flex flex-col "
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="font-extrabold flex text-left justify-start">
-            Did you get interested {" "}
+            {line1} {" "}
             </span>
             <span className="font-extrabold flex text-left justify-start">
-            in being a volunteer in{" "}
+            {line2}{" "}
             </span>
-            <span className="font-extrabold flex text-left justify-start">
-            HangFlow ry?{" "}
-            </span>
+            
             
           </motion.h3>
 
           
         </div>
         
-        <div className=" w-52 mt-5 sm:static sm:visible"> 
+        <div className=" w-52 mt-2 sm:static sm:visible"> 
           <Link
               href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
               target="_blank"
               className="group text-gray-50 text-sm border bg-black border-black mr-2.5 px-6 py-3 flex align-middle items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:border-gray-50 dark:text-gray-50 dark:text-opacity-90 "
 
             >
-              Apply From Here
+              {apply}
 
             </Link>
 

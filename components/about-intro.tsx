@@ -14,9 +14,10 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
 import { SiBento } from "react-icons/si";
 
-export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
+export default function AboutIntro({ aboutIntro1, aboutIntro2, events }: {
   aboutIntro1: string, 
   aboutIntro2: string
+  events: string,
 }) {
 
   const locale = useLocale();
@@ -31,7 +32,7 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
     >
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
-          className="sm:px-4 text-4xl m-3 -ml-5 sm:-ml-80 flex-auto font-medium !leading-[1] sm:text-9xl flex flex-col"
+          className="sm:px-4 text-4xl m-3 -ml-5 sm:-ml-80 sm:mr-40 flex-auto font-medium !leading-[1] sm:text-9xl flex flex-col"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -72,7 +73,7 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
               setTimeOfLastClick(Date.now());
             }}
           >
-            EVENTS
+            {events}{" "}
             
           </Link>
           <div className="flex gap-2">
@@ -120,7 +121,7 @@ export default function AboutIntro({ aboutIntro1, aboutIntro2 }: {
           style={{ width: '80%', height: 'auto', textAlign: 'center' }}
           quality="95"
           priority={true}
-          className="z-5 sm:-ml-24 w-40"
+          className="z-5  w-40"
         />
 
       </motion.div>

@@ -1,21 +1,22 @@
-"use client";
+// "use client";------1
 
 import EventsAbout from "@/components/events-about";
 import EventsCheckout from "@/components/events-checkout";
 import EventsGrid from "@/components/events-grid";
 import EventsIntro from "@/components/events-intro";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 export default function Events() {
     const locale = useLocale();
-    const router = useRouter();
+    const t = useTranslations("Index");
+    // const router = useRouter();------1
 
-    function goToDetailEvents(id: string) {
-        router.push(`/${locale}/events/${id}`);
-    }
+    // function goToDetailEvents(id: string) {------1
+    //     router.push(`/${locale}/events/${id}`);------1
+    // }------1
 
 
     return (
@@ -23,10 +24,10 @@ export default function Events() {
             className="flex flex-col items-center justify-center h-full w-full gap-5 mb-6 sm:scroll-m-28"
         >
             <div className="flex flex-col items-center justify-center scroll-smooth">
-                <EventsIntro/>
-                <EventsAbout/>
+                <EventsIntro eventsIntro={t("eventsPage.eventsIntro")} events={t("events")}/>
+                <EventsAbout  eventTitle={t("eventsPage.eventTitle")} eventsDesc1={t("eventsPage.eventsDesc1")} eventsDesc2={t("eventsPage.eventsDesc2")} eventsDesc3={t("eventsPage.eventsDesc3")} eventsBtn={t("eventsPage.eventsBtn")}/>
                 {/* <EventsCheckout/> */}
-                <EventsGrid/>
+                <EventsGrid eventsProjects={t("eventsPage.eventsProjects")}/>
             </div>
 
             {/* <div className="flex flex-row max-sm:flex-col w-full justify-center gap-5">

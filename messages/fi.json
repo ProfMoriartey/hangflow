@@ -28,20 +28,40 @@
     "headerLanguage": "Kieli",
     "aboutPage": {
       "ourStory": "Meidän tarinamme",
-      "ourMission": "tehtävämme"
+      "ourMission": "tehtävämme",
+      "apply": "Hae mukaan täältä!"
     },
     "aboutIntro": {
       "aboutIntro1": "ME OLEMME HANGFLOW",
+      "events": "TAPAHTUMAT",
       "aboutIntro2": ""
     },
     "aboutAbout": {
-      "aboutTitle": "Tietoa meistä?",
-      "aboutDesc1": "HangFlow ry is a non-profit youth organization located in Turku, founded by the passion and drive of young activists in the summer of 2020. Our unwavering commitment revolves around championing the voices of the youth and propelling the cause of equity and equality. Our fundamental objective is to create a safe space for every young individual, built upon the guiding principle of ' by youth, for youth.'",
-      "aboutDesc2": "Our mission at HangFlow ry is to establish safe environments for young people, places where everyone can be their authentic selves and grow at their own pace and on their unique journey. We firmly believe that every young person deserves to be heard, respected, and cherished as an indispensable part of their community, irrespective of their background or identity.",
-      "aboutDesc3": "Our focus revolves around empowering young minds with vital life skills such as problem-solving and advocacy while underlining the paramount importance of equity and equality. We offer opportunities for intergenerational learning and development, striving relentlessly to ensure that each young person can express themselves without the specter of discrimination and equality. Our strength lies in collaboration, fostering an environment where the community thrives and evolves collectively.",
-      "aboutDesc4": "HangFlow ry operates through the unwavering dedication of devoted volunteer youth workers. Our aim is to thwart youth exclusion and champion the cause of equity and equality in society. We openly address head-on the most challenging topics and shatter societal taboos, providing support under the nurturing guidance of a trusted adult. Our efforts encompass a wide spectrum of contemporary issues, spanning violence, bullying, mental health, racism, and gender and sexual diversity. Our ultimate goal is to construct a community where every youth’s voice finds a receptive ear to be heard and to be understood.",
-      "aboutDesc5": "We invite you to engage in the vibrant activities hosted by HangFlow ry and join hands with us in advancing the cause of equity and equality, forging a brighter future for our youth and our community, and safeguarding every young person's right to embrace their true selves. Do not hesitate to reach out, partake in our events, and become an integral part of our empowering movement. Together, we can instigate the change we aspire to see."
-
+      "aboutTitle": "Mikä on HangFlow ry?",
+      "aboutDesc1": "HangFlow ry on voittoa tavoittelematon nuorisojärjestö 13–29-vuotiaille nuorille, joka toimii Turussa, Suomessa. Järjestö sai alkunsa nuorten aktivistien intohimosta ja tarmosta kesällä 2020. Missiomme on yksinkertainen mutta vaikuttava: vahvistaa nuorten ääntä ja edistää yhdenvertaisuutta ja tasa-arvoa kaikessa toiminnassamme. Periaatteemme ‘nuorilta nuorille’ mukaisesti luomme turvallisempia, rohkeampia ja osallistavampia tiloja, joissa jokainen nuori voi kukoistaa.",
+      "aboutDesc2": "HangFlow ry:ssä jokainen nuori on arvokas, huomioitu ja voimaannuttettu olemaan oma itsensä. Tapahtumiemme, toimintamme ja projektimme kautta tuemme henkilökohtaista kasvua, rakennamme itseluottamusta ja tarjoamme keskeisiä elämäntaitoja, kuten ongelmanratkaisua, vaikuttamista ja johtajuutta. Rakentamamme yhteisö takaa, että nuoret voivat ilmaista itseään vapaasti ilman syrjinnän pelkoa ja osallistua aktiivisesti yhteisöihinsä taustastaan tai identiteetistään riippumatta.",
+      "aboutDesc3": "Toimintamme ytimessä on turvallisen (nuoren) aikuisen konsepti—luotettava henkilö, joka tukee, ohjaa ja mentoroi nuoria heidän elämänhaasteissaan. Sitoutuneet vapaaehtoiset nuorisotyöntekijämme toimivat tässä roolissa, luoden luottamukseen ja turvaan perustuvan pohjan, joka auttaa nuoria rakentamaan resilienssiä ja itseluottamusta.",
+      "aboutDesc4": "Olemme luoneet yhteistyöhön, sukupolvien väliseen oppimiseen ja yhteiseen kasvuun perustuvan ympäristön, jossa nuoret ja yhteisön jäsenet kehittyvät yhdessä. Yhteisömme tarttuu vaikeisiin aiheisiin suoraan, kuten väkivaltaan, kiusaamiseen, mielenterveyteen, rasismiin sekä sukupuoli- ja seksuaaliseen moninaisuuteen. Murtamalla yhteiskunnan tabuja ja edistämällä avointa keskustelua voimaannutamme nuoria kohtaamaan nämä haasteet vahvuudella ja tiedostavuudella.",
+      "aboutDesc5": "HangFlow ry toimii sekä ruohonjuuritasolla että laajemmilla kentillä, varmistaen, että työmme vaikuttaa monella tasolla. Paikallisesti keskitymme nuorten tarpeisiin ja ideoihin suoraan heidän omissa yhteisöissään. Kansallisesti olemme aktiivisesti mukana nuorisotyötä kehittävässä keskustelussa ja yhteistyössä. Kansainvälisesti osallistumme ylpeästi globaaleihin aloitteisiin, edistämme kulttuurien välistä oppimista ja vahvistamme nuorten ääntä kansainvälisillä areenoilla. Jokainen jäsenemme on meille yksilönä tärkeä ja olennainen osa järjestöämme. Arvostamme syvästi jokaisen panosta, sillä jäsenemme ovat yhteisömme sydän ja missiomme kantava voima.",
+      "aboutDesc6": "HangFlow ry on enemmän kuin järjestö—se on elävä yhteisö ja liike, jossa nuorten äänet tulevat kuulluiksi, juhlituksi ja ymmärretyksi. Kutsumme sinut mukaan rakentamaan nuorten kanssa ja nuoria varten parempaa nykyhetkeä ja tulevaisuutta, joka pohjautuu yhdenvertaisuuteen, osallisuuteen ja itseilmaisuun. Osallistuitpa tapahtumiimme, teit yhteistyötä kanssamme tai vain otit yhteyttä oppiaksesi lisää, jokainen panos vahvistaa yhteistä visiota.",
+      "aboutDesc7": "Yhdessä muovaamme nykyhetkeä ja tulevaisuutta, jossa turvallisemmat tilat, voimaantuneet äänet ja luotettavat suhteet ovat todellisuutta jokaiselle nuorelle."
+    },
+    "aboutAccordeon": {
+      "question1": "Miten voin liittyä ja osallistua HangFlow ry:n toimintaan?",
+      "question2": "Miksi ja miten ryhtyä vapaaehtoiseksi HangFlow ry:lle?"
+    },
+    "aboutApply": {
+      "line1": "Kiinnostuitko vapaaehtoisena",
+      "line2": "toimimisesta HangFlow ry:ssä?"
+    },
+    "eventsPage": {
+      "eventsIntro": "HANGFLOW TAPAHTUMAT",
+      "eventTitle": "Mitä ovat HangFlow ry:n tapahtumat?",
+      "eventsDesc1": "HangFlow ry:n tapahtumat tarjoavat nuorille mahdollisuuden pitää hauskaa, kokea uusia asioita, luoda yhteyksiä, ilmaista itseään ja ottaa merkityksellisiä rooleja johtajuudessa. Nämä tapahtumat ovat turvallisempia ja rohkeampeja tiloja, joissa nuoret voivat jakaa ideoitaan vapaasti, oppia uusia taitoja ja tutkia omaa potentiaaliaan ilman pelkoa tuomitsemisesta. HangFlow ry:n tapahtumat vaihtelevat luovista työpajoista ja vertaisohjatuista keskusteluista yhteisöprojekteihin ja hauskoihin aktiviteetteihin, jotka tuovat nuoret yhteen käytännössä melkein kaikki on mahdollista!",
+      "eventsDesc2": "HangFlow ry tapahtumien ytimessä on motto 'nuorilta nuorille,' mikä takaa, että nuoret ovat aktiivisesti mukana suunnittelemassa ja muokkaamassa kaikkia tapahtuman osa-alueita. Kyse on siitä, että heille annetaan välineet, tuki ja vapaus toteuttaa omia visioitaan samalla, kun luodaan yhteisöllisyyden ja osallisuuden tunnetta.",
+      "eventsDesc3": "Parasta tässä kaikessa on se, että kaikki HangFlow ry tapahtumat ovat täysin ilmaisia 13–29 vuotiaille nuorille. Joten mitä vielä odotat? Tutustu tuleviin tapahtumiimme ja tule mukaan pitämään hauskaa! ",
+      "eventsBtn": "Tutustu tuleviin tapahtumiimme!",
+      "eventsProjects": "MEIDÄN PROJEKTIT"
     }
   }
 }

@@ -6,8 +6,14 @@ import {
     AccordionIcon,
     Box,
 } from '@chakra-ui/react'
+import { useLocale } from 'next-intl';
 
-export default function Accordeon() {
+export default function Accordeon({ }: {
+    // question1: string,
+    // question2: string
+    
+  }) {
+    const locale = useLocale();
     return (
         <div className='mt-10'>
             <Accordion className='w-4/5 ml-[10%] mb-5' allowMultiple>
