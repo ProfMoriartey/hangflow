@@ -14,8 +14,8 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLocale } from "next-intl";
 import { SiBento } from "react-icons/si";
 
-export default function Intro({ intro1, intro2 }: {
-  intro1: string,
+export default function Intro({ events, intro2 }: {
+  events: string,
   intro2: string
 }) {
 
@@ -37,12 +37,10 @@ export default function Intro({ intro1, intro2 }: {
           animate={{ opacity: 1, y: 0 }}
         >
           
-          <span className="font-semibold text-right w-28 flex justify-start">
-            {intro1}{" "}
+          <span className="font-semibold text-3xl md:text-8xl text-right w-28 flex justify-start">
+          Let’s Flow Together
           </span>
-          <span className="font-semibold text-right w-28 flex justify-start">
-            {intro2}{" "}
-          </span>
+          
         </motion.h1>
 
 
@@ -74,7 +72,7 @@ export default function Intro({ intro1, intro2 }: {
               setTimeOfLastClick(Date.now());
             }}
           >
-            EVENTS
+            {events}{" "}
             <MdOutlineEmojiEvents className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           <div className="flex gap-2">

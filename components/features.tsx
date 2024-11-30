@@ -5,8 +5,15 @@ import { motion } from "framer-motion";
 import React from "react";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
-export default function Features() {
+export default function Features({valuesTitle1, valuesTitle2 }: {
+  valuesTitle1: string,
+  valuesTitle2: string
+
+}) {
+  const { ref } = useSectionInView("About");
+  const locale = useLocale();
   
   return (
     <div>
@@ -26,10 +33,10 @@ export default function Features() {
         >
           
           <span className="font-medium  flex justify-start">
-            Check our{" "}
+            {valuesTitle1}{" "}
           </span>
           <span className="font-medium  flex justify-start">
-            Main Values!{" "}
+            {valuesTitle2}{" "}
           </span>
         </motion.h3>
       </SectionHeading>

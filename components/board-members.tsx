@@ -14,10 +14,15 @@ import {
 } from "@/components/ui/carousel";
 import { memberData } from "@/lib/data";
 import Member from "./member";
+import { useLocale } from "next-intl";
 
-export default function BoardMembers() {
+export default function BoardMembers({ boardTitle1, boardTitle2 }: {
+  boardTitle1: string,
+  boardTitle2: string
+  
+}) {
   const { ref } = useSectionInView("Board");
-
+  const locale = useLocale();
   return (
     <motion.section
       ref={ref}
@@ -36,10 +41,10 @@ export default function BoardMembers() {
          <div className="bg-[#fbe2e3] absolute -z-10 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b6d80]"></div>
 
         <span className="font-medium flex justify-start">
-          2024{" "}
+          {boardTitle1}{" "}
         </span>
         <span className="font-medium flex justify-start">
-          Board Members{" "}
+          {boardTitle2}{" "}
         </span>
       </motion.h1>
 

@@ -8,11 +8,14 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: {
+export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore, aboutBtn1, aboutBtn2, aboutBtn3 }: {
   aboutTitle: string,
   aboutDesc: string,
   aboutHeader: string,
-  ReadMore: string
+  ReadMore: string,
+  aboutBtn1: string,
+  aboutBtn2: string,
+  aboutBtn3: string
 }) {
   const { ref } = useSectionInView("About");
   const locale = useLocale();
@@ -74,7 +77,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold text-center`}>
-            Equity{" "}
+            {aboutBtn1}{" "}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span> */}
@@ -90,7 +93,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold text-center`}>
-            Safer & Braver Space{" "}
+          {aboutBtn2}{" "}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span> */}
@@ -107,7 +110,7 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader, ReadMore }: 
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold text-center`}>
-            Empowerment{" "}
+            {aboutBtn3}{" "}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span> */}

@@ -8,9 +8,10 @@ import SectionHeading from "./section-heading";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-export default function CheckEvents({ checkEvents, ReadMore }: {
+export default function CheckEvents({ checkEvents, ReadMore, eventsDesc }: {
   checkEvents: string,
-  ReadMore: string
+  ReadMore: string,
+  eventsDesc: string
 }) {
   const { ref } = useSectionInView("Events");
   const locale = useLocale();
@@ -47,8 +48,7 @@ export default function CheckEvents({ checkEvents, ReadMore }: {
 
             </motion.h1>
             <p className="mb-5 mt-2 px-4 max-w-sm absolute sm:static invisible sm:visible">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              {eventsDesc}
             </p>
             <div className="ml-4 w-52 absolute invisible sm:static sm:visible"> <Link
               href={"/" + locale + "/events"}
