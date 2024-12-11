@@ -24,7 +24,7 @@ export default function CheckEvents({ checkEvents, ReadMore, eventsDesc }: {
       <SectionHeading> </SectionHeading>
       <div className="flex flex-row mb-16">
         <div className="absolute invisible sm:static sm:visible ">
-        <div className="bg-[#dbd7fb] absolute -z-10 h-[42rem] w-[50rem] rounded-full blur-[10rem] sm:w-[75.75rem] dark:bg-[#946387]"></div>
+        {/* <div className="bg-[#dbd7fb] absolute -z-10 h-[42rem] w-[50rem] rounded-full blur-[10rem] sm:w-[75.75rem] dark:bg-[#946387]"></div> */}
           <Image
             src="/group-pic1.png"
             width={800}

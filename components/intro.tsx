@@ -29,7 +29,7 @@ export default function Intro({ events, intro2 }: {
       id="home"
       className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28 sm:scroll-m-28"
     >
-     <div className="bg-[#dbd7fb] absolute -z-10 h-[50rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#676394]"></div> 
+     {/* <div className="bg-[#dbd7fb] absolute -z-10 h-[50rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#676394]"></div>  */}
       <div className="flex flex-col w-1/3 items-center">
         <motion.h1
           className="sm:px-4 text-2xl md:mr-10 flex-auto font-medium !leading-[1] sm:text-7xl flex flex-col"
@@ -66,7 +66,7 @@ export default function Intro({ events, intro2 }: {
           <Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
-            className="group bg-black text-white mr-2.5 px-12 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-black text-white mr-2.5 px-8 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Events");
               setTimeOfLastClick(Date.now());

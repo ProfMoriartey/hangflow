@@ -40,7 +40,7 @@ export default function Features({valuesTitle1, valuesTitle2 }: {
           </span>
         </motion.h3>
       </SectionHeading>
-      <div className="bg-[#fbe2e3] absolute -z-10  h-[40rem] w-[20rem] rounded-full blur-[10rem] sm:w-[40rem] dark:bg-[#5a61f2]"></div>
+      {/* <div className="bg-[#fbe2e3] absolute -z-10  h-[40rem] w-[20rem] rounded-full blur-[10rem] sm:w-[40rem] dark:bg-[#5a61f2]"></div> */}
       <Image
         src={"/features-en.png"}
         width={1000}
