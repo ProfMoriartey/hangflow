@@ -27,7 +27,7 @@ export default function Intro({ events, intro2 }: {
     <section
       ref={ref}
       id="home"
-      className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28 sm:scroll-m-28"
+      className="flex flex-row-reverse sm:flex-row justify-center items-center w-full py-16 gap-14 sm:gap-28 scroll-m-28"
     >
      {/* <div className="bg-[#dbd7fb] absolute -z-10 h-[50rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#676394]"></div>  */}
       <div className="flex flex-col w-1/3 items-center">

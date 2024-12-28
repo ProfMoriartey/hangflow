@@ -23,16 +23,19 @@ export default function AboutGrid({ boardTitle1, boardTitle2 }: {
     function goToDetailEvents(id: string) {
         router.push(`/${locale}/events/${id}`);
     }
-
+    const { ref } = useSectionInView("Events");
   return (
     <motion.section
-     
-      className="w-full flex flex-col justify-center items-center"
+      id="boardMembers"
+      ref={ref}
+
+      className="w-full flex flex-col justify-center items-center scroll-m-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
    
     >
+        
     <div className="flex flex-col justify-center w-3/5 max-sm:w-full">
         <div className="flex flex-col mb-2 sm:mb-0 left-0 w-3/5 ">
             <motion.h3

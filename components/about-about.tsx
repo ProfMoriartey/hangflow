@@ -49,7 +49,7 @@ export default function AboutAbout({ aboutTitle, aboutDesc1, aboutDesc2, aboutDe
           
         </div>
 
-        <p className="basis-1/2 flex flex-col gap-4  mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
+        <p className="basis-1/2 flex flex-col gap-4 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-jus">
         <div>{aboutDesc1}{""}</div>
         <div>{aboutDesc2}{""}</div>
         <div>{aboutDesc3}{""}</div>

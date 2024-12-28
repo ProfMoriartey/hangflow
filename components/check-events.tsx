@@ -84,7 +84,7 @@ export default function CheckEvents({ checkEvents, ReadMore, eventsDesc }: {
           <div className="mt-4 ml-4 w-52 sm:absolute sm:invisible static visible"> <Link
             href="https://www.eventbrite.fi/o/hangflow-ry-83120236073"
             target="_blank"
-            className="group text-black text-sm border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
+            className="group text-sm text-black border border-black mr-2.5 px-6 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white-400 active:scale-105 transition dark:bg-gray-900 dark:border-gray-50 dark:text-gray-50 dark:text-opacity-90"
           >
             {ReadMore}
           </Link>

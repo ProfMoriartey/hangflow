@@ -67,7 +67,8 @@ export default function About({ aboutTitle, aboutDesc, aboutHeader1, aboutHeader
           </motion.h3>
         </div>
 
-        <p className="basis-1/2 md:basis-3/5 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-left">
+        <p className="basis-4/5 md:basis-3/5 mx-4 mt-0 sm:mt-5 mb-6 sm:mb-12 text-sm text-justify md:text-left">
+        
           {aboutDesc}
         </p>
 

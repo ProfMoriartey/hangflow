@@ -83,6 +83,7 @@ console.log(locale)
           </ul>
         </nav>
         <div className="max-sm:flex flex-row justify-between hidden">
+        <Link href={'/' + locale}>
           <Image
             src="/logo.png"
             alt="Hangflow Logo"
@@ -91,6 +92,7 @@ console.log(locale)
             quality="95"
             priority={true}
           />
+          </Link>
           <div className="flex flex-row gap-8 w-3/5 justify-end pr-4">
             <div className={styles.dropdownMobile}>
               <button className={styles.dropbtnMobile}><BiWorld className="w-full h-full" /></button>
@@ -105,7 +107,7 @@ console.log(locale)
                 <Link href={'/' + locale}>{headerHome}</Link>
                 <Link href={'/' + locale + '/about'}>{headerAbout}</Link>
                 <Link href={'/' + locale + '/events'}>{headerEvents}</Link>
-                <Link href={'/' + locale}>{headerBoard}</Link>
+                <Link href={'/' + locale + '/about#boardMembers'}>{headerBoard}</Link>
                 <Link href={'/' + locale + '#contact'}>{headerContact}</Link>
               </div>
             </div>

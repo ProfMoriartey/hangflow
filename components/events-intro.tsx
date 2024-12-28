@@ -36,7 +36,7 @@ export default function EventsIntro({ eventsIntro, events }: {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-           <span className="font-bold text-left ms:-ml-20 -ml-8 w-28 flex justify-start">
+           <span className="font-bold text-left ms:-ml-20 -ml-28 w-28 flex justify-start">
             {eventsIntro}
           </span>
           
