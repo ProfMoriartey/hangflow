@@ -66,7 +66,7 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="/board/Shahin.png"
+                src="/board/shahin.png"
                 alt="Hangflow Logo"
                 fill
                 objectFit="cover"
@@ -297,7 +297,7 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="/board/Dayo.png"
+                src="/board/dayo.png"
                 alt="Hangflow Logo"
                 fill
                 objectFit="cover"
