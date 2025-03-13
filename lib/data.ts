@@ -91,66 +91,62 @@ export const qualificationsData = [
 
 export const memberData = [
   {
-    name: "Hannaneh",
+    name: "Shahin",
     position: "President",
-    image:
-      "/hannaneh.png",
+    image: "/board/shahin.png",
   },
   {
-    name: "Shahin",
+    name: "Hannaneh",
     position: "Vice President",
-    image:
-      "/shahin.png",
+    image: "/board/hannaneh.png",
   },
   {
     name: "Nora",
     position: "Secretary",
-    image:
-      "/nora.png",
+    image: "/nora.png",
   },
-  {
-    name: "Taru",
-    position: "Treasurer",
-    image:
-      "/taru.png",
-  },
+
   {
     name: "Victoria",
-    position: "Deputy member",
-    image:
-      "/victoria.png",
+    position: "Coordinator",
+    image: "/board/victoria.png",
+  },
+  {
+    name: "Sanah",
+    position: "Coordinator",
+    image: "/board/sanah.png",
+  },
+
+  {
+    name: "Rifat",
+    position: "Coordinator",
+    image: "/board/rifat.png",
   },
   {
     name: "Saara",
-    position: "Deputy member",
-    image:
-      "/saara.png",
+    position: "Coordinator",
+    image: "/board/saara.png",
   },
-  
+  {
+    name: "Morad",
+    position: "Coordinator",
+    image: "/board/morad.png",
+  },
   {
     name: "Dandy",
-    position: "Deputy member",
-    image:
-      "/dandy.png",
+    position: "Assistant",
+    image: "/board/dandy.png",
   },
   {
-    name: "Helmi",
-    position: "Deputy member",
-    image:
-      "/helmi.png",
+    name: "Sania",
+    position: "Assistant",
+    image: "/board/sania.png",
   },
   {
-    name: "Vilma",
-    position: "Deputy member",
-    image:
-      "/vilma.png",
+    name: "Dayo",
+    position: "Assistant",
+    image: "/board/dayo.png",
   },
-  {
-    name: "Dung",
-    position: "Deputy member",
-    image:
-      "/dung.png",
-  }
 ] as const;
 
 export const featureData = [
