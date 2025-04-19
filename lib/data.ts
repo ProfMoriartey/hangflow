@@ -103,7 +103,7 @@ export const memberData = [
   {
     name: "Nora",
     position: "Secretary",
-    image: "/nora.png",
+    image: "/board/nora.png",
   },
 
   {
