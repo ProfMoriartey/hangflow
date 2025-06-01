@@ -3,7 +3,6 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
         hostname: "images.unsplash.com",
       },
     ],
@@ -17,3 +16,5 @@ const createNextIntlPlugin = require("next-intl/plugin");
 
 const withNextIntl = createNextIntlPlugin();
 module.exports = withNextIntl(nextConfig);
+
+// protocol: "https",
