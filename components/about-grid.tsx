@@ -129,6 +129,27 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
+                src="/board/morad.png"
+                alt="Hangflow Logo"
+                fill
+                objectFit="cover"
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Morad
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Treasurer
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
                 src="/board/victoria.png"
                 alt="Hangflow Logo"
                 fill
@@ -141,6 +162,27 @@ export default function AboutGrid({
             <div className="px-6 py-4">
               <div className="font-bold text-xl text-gray-700 dark:text-white/70">
                 Victoria
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Coordinator
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
+                src="/board/dandy.png"
+                alt="Hangflow Logo"
+                fill
+                objectFit="cover"
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Dandy
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
                 Coordinator
@@ -171,27 +213,6 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="/board/rifat.png"
-                alt="Hangflow Logo"
-                fill
-                objectFit="cover"
-                quality="95"
-                className="z-0"
-                priority={true}
-              />
-            </div>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
-                Rifat
-              </div>
-              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Coordinator
-              </p>
-            </div>
-          </div>
-          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-            <div className="h-48 overflow-hidden relative">
-              <Image
                 src="/board/saara.png"
                 alt="Hangflow Logo"
                 fill
@@ -207,69 +228,6 @@ export default function AboutGrid({
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
                 Coordinator
-              </p>
-            </div>
-          </div>
-          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-            <div className="h-48 overflow-hidden relative">
-              <Image
-                src="/board/morad.png"
-                alt="Hangflow Logo"
-                fill
-                objectFit="cover"
-                quality="95"
-                className="z-0"
-                priority={true}
-              />
-            </div>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
-                Morad
-              </div>
-              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Coordinator
-              </p>
-            </div>
-          </div>
-          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-            <div className="h-48 overflow-hidden relative">
-              <Image
-                src="/board/dandy.png"
-                alt="Hangflow Logo"
-                fill
-                objectFit="cover"
-                quality="95"
-                className="z-0"
-                priority={true}
-              />
-            </div>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
-                Dandy
-              </div>
-              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Assistant
-              </p>
-            </div>
-          </div>
-          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-            <div className="h-48 overflow-hidden relative">
-              <Image
-                src="/board/vilma.png"
-                alt="Hangflow Logo"
-                fill
-                objectFit="cover"
-                quality="95"
-                className="z-0"
-                priority={true}
-              />
-            </div>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
-                Vilma
-              </div>
-              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Assistant
               </p>
             </div>
           </div>
@@ -297,6 +255,27 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
+                src="/board/najib.png"
+                alt="Hangflow Logo"
+                fill
+                objectFit="cover"
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Najib
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Assistant
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
                 src="/board/dayo.png"
                 alt="Hangflow Logo"
                 fill
@@ -309,6 +288,27 @@ export default function AboutGrid({
             <div className="px-6 py-4">
               <div className="font-bold text-xl text-gray-700 dark:text-white/70">
                 Dayo
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Assistant
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
+                src="/board/vilma.png"
+                alt="Hangflow Logo"
+                fill
+                objectFit="cover"
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Vilma
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
                 Assistant
