@@ -134,7 +134,7 @@ export const memberData = [
   },
   {
     name: "Sania",
-    position: "Assistant",
+    position: "Coordinator",
     image: "/board/sania.png",
   },
   {
