@@ -248,7 +248,7 @@ export default function AboutGrid({
                 Sania
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Assistant
+                Coordinator
               </p>
             </div>
           </div>
