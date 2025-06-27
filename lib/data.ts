@@ -107,20 +107,25 @@ export const memberData = [
   },
 
   {
+    name: "Morad",
+    position: "Treasurer",
+    image: "/board/morad.png",
+  },
+  {
     name: "Victoria",
     position: "Coordinator",
     image: "/board/victoria.png",
+  },
+
+  {
+    name: "Dandy",
+    position: "Coordinator",
+    image: "/board/dandy.png",
   },
   {
     name: "Sanah",
     position: "Coordinator",
     image: "/board/sanah.png",
-  },
-
-  {
-    name: "Rifat",
-    position: "Coordinator",
-    image: "/board/rifat.png",
   },
   {
     name: "Saara",
@@ -128,24 +133,24 @@ export const memberData = [
     image: "/board/saara.png",
   },
   {
-    name: "Morad",
-    position: "Coordinator",
-    image: "/board/morad.png",
-  },
-  {
-    name: "Dandy",
-    position: "Assistant",
-    image: "/board/dandy.png",
-  },
-  {
     name: "Sania",
     position: "Assistant",
     image: "/board/sania.png",
   },
   {
+    name: "Najib",
+    position: "Assistant",
+    image: "/board/najib.png",
+  },
+  {
     name: "Dayo",
     position: "Assistant",
     image: "/board/dayo.png",
+  },
+  {
+    name: "Vilma",
+    position: "Assistant",
+    image: "/board/vilma.png",
   },
 ] as const;
 
