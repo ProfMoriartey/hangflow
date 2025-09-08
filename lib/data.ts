@@ -139,7 +139,7 @@ export const memberData = [
   },
   {
     name: "Najib",
-    position: "Assistant",
+    position: "Coordinator",
     image: "/board/najib.png",
   },
   {
@@ -148,9 +148,19 @@ export const memberData = [
     image: "/board/dayo.png",
   },
   {
-    name: "Vilma",
-    position: "Assistant",
-    image: "/board/vilma.png",
+    name: "Sarok",
+    position: "Volunteer",
+    image: "/board/sarok.png",
+  },
+  {
+    name: "Milad",
+    position: "Volunteer",
+    image: "/board/milad.png",
+  },
+  {
+    name: "Amir",
+    position: "Volunteer",
+    image: "/board/amir.png",
   },
 ] as const;
 
