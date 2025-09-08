@@ -19,14 +19,13 @@
     "@react-email/components": "^0.0.7",
     "@react-email/tailwind": "^0.0.8",
     "@types/node": "^24.3.1",
-    "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
     "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "embla-carousel-react": "^8.0.0-rc22",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^10.18.0",
     "google-fonts": "^1.0.0",
     "i18next": "^23.8.0",
     "i18next-resources-to-backend": "^1.2.0",
@@ -51,7 +50,8 @@
     "typescript": "5.1.5"
   },
   "devDependencies": {
-    "@types/react": "^19.1.12",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
     "@types/react-slick": "^0.23.13",
     "@types/react-vertical-timeline-component": "^3.3.3"
   }
