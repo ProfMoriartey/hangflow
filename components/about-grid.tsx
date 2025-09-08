@@ -90,7 +90,6 @@ export default function AboutGrid({
                 src="/board/hannaneh.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0 "
                 priority={true}
@@ -111,7 +110,6 @@ export default function AboutGrid({
                 src="/board/nora.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -132,7 +130,6 @@ export default function AboutGrid({
                 src="/board/morad.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -153,7 +150,6 @@ export default function AboutGrid({
                 src="/board/victoria.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -174,7 +170,6 @@ export default function AboutGrid({
                 src="/board/dandy.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -195,7 +190,6 @@ export default function AboutGrid({
                 src="/board/sanah.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -216,7 +210,6 @@ export default function AboutGrid({
                 src="/board/saara.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -237,7 +230,6 @@ export default function AboutGrid({
                 src="/board/sania.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -258,7 +250,6 @@ export default function AboutGrid({
                 src="/board/najib.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -269,7 +260,7 @@ export default function AboutGrid({
                 Najib
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Assistant
+                Coordinator
               </p>
             </div>
           </div>
@@ -279,7 +270,6 @@ export default function AboutGrid({
                 src="/board/dayo.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -297,10 +287,9 @@ export default function AboutGrid({
           <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="/board/vilma.png"
+                src="/board/sarok.png"
                 alt="Hangflow Logo"
                 fill
-                objectFit="cover"
                 quality="95"
                 className="z-0"
                 priority={true}
@@ -308,10 +297,50 @@ export default function AboutGrid({
             </div>
             <div className="px-6 py-4">
               <div className="font-bold text-xl text-gray-700 dark:text-white/70">
-                Vilma
+                Sarok
               </div>
               <p className="text-gray-700 dark:text-white/70 text-left text-l ">
-                Assistant
+                Volunteer
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
+                src="/board/milad.png"
+                alt="Hangflow Logo"
+                fill
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Milad
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Volunteer
+              </p>
+            </div>
+          </div>
+          <div className="max-w-md rounded-xl  overflow-hidden shadow-lg z-[0] bg-gray-100 border border-black/5 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <div className="h-48 overflow-hidden relative">
+              <Image
+                src="/board/amir.png"
+                alt="Hangflow Logo"
+                fill
+                quality="95"
+                className="z-0"
+                priority={true}
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl text-gray-700 dark:text-white/70">
+                Amir
+              </div>
+              <p className="text-gray-700 dark:text-white/70 text-left text-l ">
+                Volunteer
               </p>
             </div>
           </div>
